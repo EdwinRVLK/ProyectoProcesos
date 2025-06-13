@@ -1,0 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.login-container {
+  display: flex;
+  height: auto;
+  width: auto; /* Ocupa todo el ancho de la ventana */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.left-panel {
+  flex: 2.5; /* Ocupa proporcionalmente espacio, puedes aumentar si quieres más */
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Para que no salga de su contenedor */
+  position: relative;
+}
+
+.left-panel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    object-fit: cover; /* Elimina espacio debajo de la imagen */
+}
+
+.right-panel {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  height: 100vh;
+  margin: 0; /* Eliminar márgenes */
+  box-sizing: border-box;
+  overflow-y: auto; /* En caso de pantallas pequeñas para scroll */
+}
+
+.logo {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 250px;
+  height: auto;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.forgot-password {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.forgot-password a {
+  font-size: 0.9rem;
+  color: #0071c1;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: #28a745; /* Verde */
+  color: white;
+  border-radius: 4px;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #136326;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 4px;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #cacaca;
+}
+
+.error {
+  margin-top: 15px;
+  color: red;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espacio entre input y icono */
+}
+
+/* Input con borde y foco */
+.input-with-icon input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.input-with-icon input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px 1px #28a745;
+}
+
+/* Caja del ícono con fondo y borde */
+.icon-box {
+  background-color: #28a745; /* fondo verde */
+  color: white;
+  width: 40px;       /* ancho fijo para cuadro */
+  height: 40px;      /* alto fijo para cuadro */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;    /* evita que se achique */
+}
+
+

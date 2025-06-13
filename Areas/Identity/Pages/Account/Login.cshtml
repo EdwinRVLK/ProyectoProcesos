@@ -1,0 +1,64 @@
+﻿@page
+@model GimManager.Areas.Identity.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Iniciar sesión";
+}
+
+<link rel="stylesheet" href="~/css/login.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<div class="login-container">
+    <div class="left-panel">
+        <img src="~/imagenes/imgLogin.jpg" alt="Imagen de login" />
+    </div>
+
+    <div class="right-panel">
+        <div class="logo">
+            <img src="~/imagenes/imagenlogo.png" alt="Logo" />
+        </div>
+
+        <h2>Iniciar Sesión</h2>
+
+        <form method="post" class="form-group">
+            <div class="input-group">
+                <label asp-for="Input.Email"></label>
+                <div class="input-with-icon">
+                    <input asp-for="Input.Email" class="form-group" placeholder="Ingresa tu correo" />
+                        <div class="icon-box">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="input-group">
+                <label asp-for="Input.Password"></label>
+                <div class="input-with-icon">
+                    <input asp-for="Input.Password" type="password" class="form-control" placeholder="Ingresa tu contraseña" />
+                    <div class="icon-box">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="forgot-password">
+                <a asp-page="/Account/ForgotPassword">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                <a asp-page="/Account/Register" class="btn btn-secondary">Registrarse ahora</a>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <p class="error">@Model.ErrorMessage</p>
+            }
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
