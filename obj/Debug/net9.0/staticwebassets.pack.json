@@ -21,12 +21,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\imagenes\\LogoRecortado.png",
+      "PackagePath": "staticwebassets\\imagenes\\LogoRecortado.png"
+    },
+    {
       "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\imagenes\\imagenLogo.png",
       "PackagePath": "staticwebassets\\imagenes\\imagenLogo.png"
     },
     {
       "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\imagenes\\imgLogin.jpg",
       "PackagePath": "staticwebassets\\imagenes\\imgLogin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
+      "PackagePath": "staticwebassets\\js\\lobby.js"
     },
     {
       "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\site.js",

@@ -14,38 +14,72 @@
 <link rel="stylesheet" href="~/css/lobby.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<!-- Barra superior -->
-<div class="top-bar">
+
+<div class="header-bar">
     <div class="logo">
-        <img src="~/imagenes/imagenlogo.png" alt="Logo" />
+        <img src="~/imagenes/LogoRecortado.png" alt="Logo" href="/lobby" />
     </div>
-    <div class="icons">
-        <i class="fa fa-user-circle" title="Perfil"></i>
-        <i class="fa fa-home" title="Inicio"></i>
+
+    <div class="header-title">
+        <h2 id="page-title">Inicio</h2>
+    </div>
+
+    <div class="icon-buttons">
+        <i class="fas fa-home" href="/lobby"></i>
+        <i class="fas fa-user-circle"></i>
     </div>
 </div>
 
-<!-- Menú barra -->
 <div class="menu-bar">
-    <button>Inicio</button>
-    <button>Mi progreso</button>
-    <button>Rutinas</button>
-    <button>Medidas</button>
-    <button>Historial</button>
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Usuarios</button>
+        <div class="dropdown-menu">
+            <a href="#">Mostrar</a>
+            <a href="#">Agregar</a>
+            <a href="#">Eliminar</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Inventario</button>
+    </div>
+
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Empleados</button>
+        <div class="dropdown-menu">
+            <a href="#">Mostrar</a>
+            <a href="#">Agregar</a>
+            <a href="#">Eliminar</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Ventas y membresías</button>
+        <div class="dropdown-menu">
+            <a href="#">Punto de Venta</a>
+            <a href="#">Mostrar pagos</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Reportes</button>
+    </div>
 </div>
 
-<!-- Título y campo de código -->
-<div class="main-header">
-    <h2>Resumen diario</h2>
-    <input type="text" placeholder="Código de sesión" />
+<div class="main-content">
+    <div class="top-row">
+        <h2>Resumen diario</h2>
+        <div class="code-section">
+            <label for="codigoCliente">Código del cliente:</label>
+            <input type="text" id="codigoCliente" name="codigoCliente" placeholder="Ej: ABC123" />
+        </div>
+    </div>
+
+    <div class="container-grid">
+        <div class="content-box">Caja 1</div>
+        <div class="content-box">Caja 2</div>
+        <div class="content-box">Caja 3</div>
+        <div class="content-box">Caja 4</div>
+        <div class="content-box">Caja 5</div>
+        <div class="content-box">Caja 6</div>
+    </div>
 </div>
 
-<!-- Contenedores -->
-<div class="content-grid">
-    <div class="content-box">Contenido 1</div>
-    <div class="content-box">Contenido 2</div>
-    <div class="content-box">Contenido 3</div>
-    <div class="content-box">Contenido 4</div>
-    <div class="content-box">Contenido 5</div>
-    <div class="content-box">Contenido 6</div>
-</div>
+<script src="~/js/lobby.js" defer></script>

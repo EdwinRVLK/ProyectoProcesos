@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lh6kcUEzirGqHQP0QI3ikhBLLmwg7hXy4O6TBza5ifM=",
+  "Hash": "oZiC1EYIFJEC6KYR+GZGS8Bk5JlR/h/ha1Xit5YzoPQ=",
   "Source": "GimManager",
   "BasePath": "_content/GimManager",
   "Mode": "Default",
@@ -1928,6 +1928,27 @@
       "OriginalItemSpec": "C:\\Users\\edumw\\PryGim\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+      "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\ahg2bkdxlz-94ucsb3cf9.gz",
+      "SourceId": "GimManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/GimManager",
+      "RelativePath": "js/lobby#[.{fingerprint=94ucsb3cf9}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2g3f7lhw4z",
+      "Integrity": "MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js"
+    },
+    {
       "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\aj0qp28phj-ft3s53vfgj.gz",
       "SourceId": "GimManager",
       "SourceType": "Discovered",
@@ -2621,12 +2642,12 @@
       "OriginalItemSpec": "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.6\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-g1t4tieq27.gz",
+      "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-16t3t1sznm.gz",
       "SourceId": "GimManager",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GimManager",
-      "RelativePath": "css/lobby#[.{fingerprint=g1t4tieq27}]?.css.gz",
+      "RelativePath": "css/lobby#[.{fingerprint=16t3t1sznm}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2635,8 +2656,8 @@
       "RelatedAsset": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0s8u6q9wqs",
-      "Integrity": "8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4=",
+      "Fingerprint": "6ummtjp1j4",
+      "Integrity": "4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css"
@@ -4084,8 +4105,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "g1t4tieq27",
-      "Integrity": "/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI=",
+      "Fingerprint": "16t3t1sznm",
+      "Integrity": "l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\lobby.css"
@@ -4194,6 +4215,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\imgLogin.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\edumw\\PryGim\\wwwroot\\imagenes\\LogoRecortado.png",
+      "SourceId": "GimManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edumw\\PryGim\\wwwroot\\",
+      "BasePath": "_content/GimManager",
+      "RelativePath": "imagenes/LogoRecortado#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "khmle6is5g",
+      "Integrity": "GCsZWuUM9qtT+Rj56fxUpTi6MEE2Xx8vmA235hIPrSc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\LogoRecortado.png"
+    },
+    {
+      "Identity": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
+      "SourceId": "GimManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edumw\\PryGim\\wwwroot\\",
+      "BasePath": "_content/GimManager",
+      "RelativePath": "js/lobby#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "94ucsb3cf9",
+      "Integrity": "hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\lobby.js"
     },
     {
       "Identity": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\site.js",
@@ -5479,13 +5542,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/lobby.css",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-g1t4tieq27.gz",
+      "Route": "css/lobby.16t3t1sznm.css",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-16t3t1sznm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001945525292"
+          "Quality": "0.001165501166"
         }
       ],
       "ResponseHeaders": [
@@ -5495,19 +5558,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "513"
+          "Value": "857"
         },
         {
           "Name": "ETag",
-          "Value": "\"8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4=\""
+          "Value": "\"4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 20:53:31 GMT"
+          "Value": "Sat, 14 Jun 2025 21:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -5523,18 +5586,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI=\""
+          "Value": "W/\"l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "16t3t1sznm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/lobby.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI="
+          "Value": "sha256-l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA="
         }
       ]
     },
     {
-      "Route": "css/lobby.css",
+      "Route": "css/lobby.16t3t1sznm.css",
       "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5544,7 +5615,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1331"
+          "Value": "2602"
         },
         {
           "Name": "Content-Type",
@@ -5552,121 +5623,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI=\""
+          "Value": "\"l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 20:53:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI="
-        }
-      ]
-    },
-    {
-      "Route": "css/lobby.css.gz",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-g1t4tieq27.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "513"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 20:53:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4="
-        }
-      ]
-    },
-    {
-      "Route": "css/lobby.g1t4tieq27.css",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-g1t4tieq27.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001945525292"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "513"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 20:53:31 GMT"
+          "Value": "Sat, 14 Jun 2025 21:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g1t4tieq27"
+          "Value": "16t3t1sznm"
         },
         {
           "Name": "label",
@@ -5674,13 +5645,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI="
+          "Value": "sha256-l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA="
         }
       ]
     },
     {
-      "Route": "css/lobby.g1t4tieq27.css",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
+      "Route": "css/lobby.16t3t1sznm.css.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-16t3t1sznm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5689,7 +5660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1331"
+          "Value": "857"
         },
         {
           "Name": "Content-Type",
@@ -5697,56 +5668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI=\""
+          "Value": "\"4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 20:53:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "g1t4tieq27"
-        },
-        {
-          "Name": "label",
-          "Value": "css/lobby.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/G5CZPQZtbiqwUqW4JHT62ATtbNWPE+bQZHcndPzQDI="
-        }
-      ]
-    },
-    {
-      "Route": "css/lobby.g1t4tieq27.css.gz",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-g1t4tieq27.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "513"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 20:53:31 GMT"
+          "Value": "Sat, 14 Jun 2025 21:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5764,7 +5690,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g1t4tieq27"
+          "Value": "16t3t1sznm"
         },
         {
           "Name": "label",
@@ -5772,7 +5698,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8IX9t268EHtlcS4CwpDaogHORqun3pl7sPEdDXjTeK4="
+          "Value": "sha256-4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M="
+        }
+      ]
+    },
+    {
+      "Route": "css/lobby.css",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-16t3t1sznm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001165501166"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "857"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA="
+        }
+      ]
+    },
+    {
+      "Route": "css/lobby.css",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l+jjHvaclpWfJdUxe7MFOh9MvzfBXF+lhhbroBqflfA="
+        }
+      ]
+    },
+    {
+      "Route": "css/lobby.css.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-16t3t1sznm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "857"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4qmkh3xI/YHc9XQ4x6niqUmlKpgM0OUoobSDmZJTo7M="
         }
       ]
     },
@@ -15958,6 +16021,386 @@
         {
           "Name": "integrity",
           "Value": "sha256-mq4L+rTaNagn2H/HWQ9PbVEvBk5EnBZ0JGtCC6WH8NA="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/LogoRecortado.khmle6is5g.png",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\imagenes\\LogoRecortado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GCsZWuUM9qtT+Rj56fxUpTi6MEE2Xx8vmA235hIPrSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:20:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "khmle6is5g"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/LogoRecortado.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GCsZWuUM9qtT+Rj56fxUpTi6MEE2Xx8vmA235hIPrSc="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/LogoRecortado.png",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\imagenes\\LogoRecortado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GCsZWuUM9qtT+Rj56fxUpTi6MEE2Xx8vmA235hIPrSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:20:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GCsZWuUM9qtT+Rj56fxUpTi6MEE2Xx8vmA235hIPrSc="
+        }
+      ]
+    },
+    {
+      "Route": "js/lobby.94ucsb3cf9.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\ahg2bkdxlz-94ucsb3cf9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003125000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "94ucsb3cf9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/lobby.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog="
+        }
+      ]
+    },
+    {
+      "Route": "js/lobby.94ucsb3cf9.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "94ucsb3cf9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/lobby.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog="
+        }
+      ]
+    },
+    {
+      "Route": "js/lobby.94ucsb3cf9.js.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\ahg2bkdxlz-94ucsb3cf9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "94ucsb3cf9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/lobby.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE="
+        }
+      ]
+    },
+    {
+      "Route": "js/lobby.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\ahg2bkdxlz-94ucsb3cf9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003125000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog="
+        }
+      ]
+    },
+    {
+      "Route": "js/lobby.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hwS5tg5+51f5sGVXtJlrzJR9GMCOuSLZz1X2JR+Nqog="
+        }
+      ]
+    },
+    {
+      "Route": "js/lobby.js.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\ahg2bkdxlz-94ucsb3cf9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Jun 2025 21:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MqrFD9VizzMzVaXJEti1r+T0VNOUmIQ+DS4GSIYt8hE="
         }
       ]
     },
