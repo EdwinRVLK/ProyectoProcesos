@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/GimManager/css/lobby.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\lobby.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/G5CZPQZtbiqwUqW4JHT62ATtbNWPE\u002BbQZHcndPzQDI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1331"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/G5CZPQZtbiqwUqW4JHT62ATtbNWPE\u002BbQZHcndPzQDI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 20:53:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/GimManager/css/lobby.g1t4tieq27.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\lobby.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g1t4tieq27"},{"Name":"integrity","Value":"sha256-/G5CZPQZtbiqwUqW4JHT62ATtbNWPE\u002BbQZHcndPzQDI="},{"Name":"label","Value":"_content/GimManager/css/lobby.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1331"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022/G5CZPQZtbiqwUqW4JHT62ATtbNWPE\u002BbQZHcndPzQDI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Jun 2025 20:53:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/GimManager/css/login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

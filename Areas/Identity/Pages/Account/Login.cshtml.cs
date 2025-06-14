@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 
 namespace GimManager.Areas.Identity.Pages.Account
 {
@@ -118,7 +119,9 @@ namespace GimManager.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                        // ...existing code...
+                        return RedirectToPage("/lobby");
+                        // ...existing code...
                 }
                 if (result.RequiresTwoFactor)
                 {

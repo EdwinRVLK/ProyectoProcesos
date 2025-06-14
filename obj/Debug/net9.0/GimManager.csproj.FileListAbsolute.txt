@@ -825,3 +825,4 @@ C:\Users\edumw\PryGim\obj\Debug\net9.0\refint\GimManager.dll
 C:\Users\edumw\PryGim\obj\Debug\net9.0\GimManager.pdb
 C:\Users\edumw\PryGim\obj\Debug\net9.0\GimManager.genruntimeconfig.cache
 C:\Users\edumw\PryGim\obj\Debug\net9.0\ref\GimManager.dll
+C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\mmcem1m757-g1t4tieq27.gz
