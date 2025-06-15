@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\js\\AddCliente.js"
     },
     {
+      "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\DeleteCliente.js",
+      "PackagePath": "staticwebassets\\js\\DeleteCliente.js"
+    },
+    {
       "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
       "PackagePath": "staticwebassets\\js\\lobby.js"
     },

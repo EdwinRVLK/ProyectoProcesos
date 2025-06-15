@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kAqzSaF6RV0iNPgMEdDIE8sZjrj1sNTPommS2mTMVlw=",
+  "Hash": "orQvB7bH9wwgOBYPt6WajGeEBwOBy9DQNOc98AQ9KsQ=",
   "Source": "GimManager",
   "BasePath": "_content/GimManager",
   "Mode": "Default",
@@ -2201,6 +2201,27 @@
       "OriginalItemSpec": "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.6\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+      "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\eodacpcolo-sifntg61wn.gz",
+      "SourceId": "GimManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/GimManager",
+      "RelativePath": "js/DeleteCliente#[.{fingerprint=sifntg61wn}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\DeleteCliente.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fqsflp76wv",
+      "Integrity": "N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\DeleteCliente.js"
+    },
+    {
       "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\fhdsuxs3aj-63fj8s7r0e.gz",
       "SourceId": "GimManager",
       "SourceType": "Discovered",
@@ -2663,12 +2684,12 @@
       "OriginalItemSpec": "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.6\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-vcfqtyyhbf.gz",
+      "Identity": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-314zfc3hf0.gz",
       "SourceId": "GimManager",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GimManager",
-      "RelativePath": "css/lobby#[.{fingerprint=vcfqtyyhbf}]?.css.gz",
+      "RelativePath": "css/lobby#[.{fingerprint=314zfc3hf0}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2677,8 +2698,8 @@
       "RelatedAsset": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "804etkypqr",
-      "Integrity": "OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk=",
+      "Fingerprint": "i6h02l45qm",
+      "Integrity": "BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css"
@@ -4126,8 +4147,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vcfqtyyhbf",
-      "Integrity": "wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas=",
+      "Fingerprint": "314zfc3hf0",
+      "Integrity": "J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\lobby.css"
@@ -4278,6 +4299,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\AddCliente.js"
+    },
+    {
+      "Identity": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\DeleteCliente.js",
+      "SourceId": "GimManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\edumw\\PryGim\\wwwroot\\",
+      "BasePath": "_content/GimManager",
+      "RelativePath": "js/DeleteCliente#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sifntg61wn",
+      "Integrity": "VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\DeleteCliente.js"
     },
     {
       "Identity": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
@@ -5584,13 +5626,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/lobby.css",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-vcfqtyyhbf.gz",
+      "Route": "css/lobby.314zfc3hf0.css",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-314zfc3hf0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000792393027"
+          "Quality": "0.000680272109"
         }
       ],
       "ResponseHeaders": [
@@ -5600,19 +5642,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1261"
+          "Value": "1469"
         },
         {
           "Name": "ETag",
-          "Value": "\"OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk=\""
+          "Value": "\"BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 23:56:26 GMT"
+          "Value": "Sun, 15 Jun 2025 20:05:22 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -5628,18 +5670,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas=\""
+          "Value": "W/\"J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "314zfc3hf0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/lobby.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas="
+          "Value": "sha256-J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE="
         }
       ]
     },
     {
-      "Route": "css/lobby.css",
+      "Route": "css/lobby.314zfc3hf0.css",
       "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5649,7 +5699,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4386"
+          "Value": "5913"
         },
         {
           "Name": "Content-Type",
@@ -5657,121 +5707,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas=\""
+          "Value": "\"J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 23:56:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas="
-        }
-      ]
-    },
-    {
-      "Route": "css/lobby.css.gz",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-vcfqtyyhbf.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1261"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 23:56:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk="
-        }
-      ]
-    },
-    {
-      "Route": "css/lobby.vcfqtyyhbf.css",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-vcfqtyyhbf.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000792393027"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1261"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 23:56:26 GMT"
+          "Value": "Sun, 15 Jun 2025 20:05:22 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vcfqtyyhbf"
+          "Value": "314zfc3hf0"
         },
         {
           "Name": "label",
@@ -5779,13 +5729,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas="
+          "Value": "sha256-J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE="
         }
       ]
     },
     {
-      "Route": "css/lobby.vcfqtyyhbf.css",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
+      "Route": "css/lobby.314zfc3hf0.css.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-314zfc3hf0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5794,7 +5744,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4386"
+          "Value": "1469"
         },
         {
           "Name": "Content-Type",
@@ -5802,56 +5752,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas=\""
+          "Value": "\"BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 23:56:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vcfqtyyhbf"
-        },
-        {
-          "Name": "label",
-          "Value": "css/lobby.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wcoChw5q/Ieq19JScAWM0HzrJKqRYo7SteY0s2ueDas="
-        }
-      ]
-    },
-    {
-      "Route": "css/lobby.vcfqtyyhbf.css.gz",
-      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-vcfqtyyhbf.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1261"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 23:56:26 GMT"
+          "Value": "Sun, 15 Jun 2025 20:05:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5869,7 +5774,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vcfqtyyhbf"
+          "Value": "314zfc3hf0"
         },
         {
           "Name": "label",
@@ -5877,7 +5782,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OIfffoWepUqucTChzq8ho6+gMSecXWDe8aX9hc4xvNk="
+          "Value": "sha256-BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8="
+        }
+      ]
+    },
+    {
+      "Route": "css/lobby.css",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-314zfc3hf0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000680272109"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1469"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE="
+        }
+      ]
+    },
+    {
+      "Route": "css/lobby.css",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\css\\lobby.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5913"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J463RAZ+YatTI3Tjsu0ZtiOrI63b2xvfvUAX+K7ZlTE="
+        }
+      ]
+    },
+    {
+      "Route": "css/lobby.css.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\mmcem1m757-314zfc3hf0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BnMHdpcPZxCpvh+GIGvoGZlkqsR50ZFYbI96hMmb6A8="
         }
       ]
     },
@@ -6800,7 +6842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6853,7 +6895,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6890,7 +6932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6937,7 +6979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6990,7 +7032,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7027,7 +7069,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7074,7 +7116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7135,7 +7177,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7180,7 +7222,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7235,7 +7277,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7296,7 +7338,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7341,7 +7383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 13 Jun 2025 21:59:57 GMT"
+          "Value": "Sun, 15 Jun 2025 20:19:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16443,6 +16485,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-wZdriybDRQZjA6I6gW72OjxAthpV1iHZPJfAY6HWpwU="
+        }
+      ]
+    },
+    {
+      "Route": "js/DeleteCliente.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\eodacpcolo-sifntg61wn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003484320557"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM="
+        }
+      ]
+    },
+    {
+      "Route": "js/DeleteCliente.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\DeleteCliente.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM="
+        }
+      ]
+    },
+    {
+      "Route": "js/DeleteCliente.js.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\eodacpcolo-sifntg61wn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A="
+        }
+      ]
+    },
+    {
+      "Route": "js/DeleteCliente.sifntg61wn.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\eodacpcolo-sifntg61wn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003484320557"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sifntg61wn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DeleteCliente.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM="
+        }
+      ]
+    },
+    {
+      "Route": "js/DeleteCliente.sifntg61wn.js",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\DeleteCliente.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sifntg61wn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DeleteCliente.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMv2LxfaZKE4l085OprWnIZ3Xv41IsPF1yoUfEOjnuM="
+        }
+      ]
+    },
+    {
+      "Route": "js/DeleteCliente.sifntg61wn.js.gz",
+      "AssetFile": "C:\\Users\\edumw\\PryGim\\obj\\Debug\\net9.0\\compressed\\eodacpcolo-sifntg61wn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sifntg61wn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/DeleteCliente.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N2gKVQ5o4I8LkY2KYXKjWJoalG8R0TRHIPwtGvRBE8A="
         }
       ]
     },
