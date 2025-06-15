@@ -10,5 +10,8 @@ namespace GimManager.Data
             : base(options)
         {
         }
+
+        public DbSet<Cliente> Clientes { get; set; }
+
     }
 }

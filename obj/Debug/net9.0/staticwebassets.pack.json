@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\imagenes\\imgLogin.jpg"
     },
     {
+      "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\AddCliente.js",
+      "PackagePath": "staticwebassets\\js\\AddCliente.js"
+    },
+    {
       "Id": "C:\\Users\\edumw\\PryGim\\wwwroot\\js\\lobby.js",
       "PackagePath": "staticwebassets\\js\\lobby.js"
     },
