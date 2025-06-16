@@ -745,9 +745,12 @@ C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\a3ygkwa5zy-2z0ns9nrw6.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
+C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\mmcem1m757-0xsoymftt1.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\1q5adnx1ot-smvbdats8x.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\nu4ravsiga-f0es2hwuw8.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\wfp1uwuhot-61n19gt1b8.gz
+C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\bkaimd2221-a5qcaqukez.gz
+C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\ahg2bkdxlz-94ucsb3cf9.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\skmyyialm9-xtxxf3hu2r.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\ohd2fce6l2-bqjiyaj88i.gz
 C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\agbm9mpj9g-c2jlpeoesf.gz
@@ -825,6 +828,3 @@ C:\Users\edumw\PryGim\obj\Debug\net9.0\refint\GimManager.dll
 C:\Users\edumw\PryGim\obj\Debug\net9.0\GimManager.pdb
 C:\Users\edumw\PryGim\obj\Debug\net9.0\GimManager.genruntimeconfig.cache
 C:\Users\edumw\PryGim\obj\Debug\net9.0\ref\GimManager.dll
-C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\ahg2bkdxlz-94ucsb3cf9.gz
-C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\bkaimd2221-a5qcaqukez.gz
-C:\Users\edumw\PryGim\obj\Debug\net9.0\compressed\mmcem1m757-vcfqtyyhbf.gz

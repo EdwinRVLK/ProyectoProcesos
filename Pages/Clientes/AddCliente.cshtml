@@ -16,23 +16,18 @@
         <h2>Agregar Cliente</h2>
     </div>
     <div class="icon-buttons">
-        <a href="/Lobby"><i class="fas fa-home"></i></a>
+        <a href="/Identity/lobby"><i class="fas fa-home"></i></a>
         <i class="fas fa-user-circle"></i>
     </div>
 </div>
 
 <div class="menu-bar">
     <div class="menu-item">
-        <button onclick="toggleDropdown(this)">Usuarios</button>
-        <div class="dropdown-menu">
-            <a href="#">Mostrar</a>
-            <a href="/Clientes/AddCliente">Agregar</a>
-            <a href="#">Eliminar</a>
-        </div>
+        <a href="/Clientes/GestionCliente" style="text-decoration: none;">
+            <button>Usuarios</button>
+        </a>
     </div>
-    <div class="menu-item">
-        <button onclick="toggleDropdown(this)">Inventario</button>
-    </div>
+    <div class="menu-item"><button onclick="toggleDropdown(this)">Inventario</button></div>
     <div class="menu-item">
         <button onclick="toggleDropdown(this)">Empleados</button>
         <div class="dropdown-menu">
@@ -48,9 +43,7 @@
             <a href="#">Mostrar pagos</a>
         </div>
     </div>
-    <div class="menu-item">
-        <button onclick="toggleDropdown(this)">Reportes</button>
-    </div>
+    <div class="menu-item"><button onclick="toggleDropdown(this)">Reportes</button></div>
 </div>
 
 <div class="main-content">
