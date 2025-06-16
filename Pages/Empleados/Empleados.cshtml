@@ -1,7 +1,7 @@
 @page
-@model GimManager.Pages.Inventario.InventarioModel
+@model GimManager.Pages.Empleados.EmpleadosModel
 @{
-    ViewData["Title"] = "Inventario";
+    ViewData["Title"] = "Empleados";
 }
 
 <link rel="stylesheet" href="~/css/lobby.css" />
@@ -10,13 +10,13 @@
 
 <div class="header-bar">
     <div class="logo">
-        <a href="/Identity/lobby">
+        <a href="/Lobby">
             <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
         </a>
     </div>
 
     <div class="header-title">
-        <h2>Inventario</h2>
+        <h2 id="page-title">Empleados</h2>
     </div>
 
     <div class="icon-buttons">
@@ -57,25 +57,18 @@
     </div>
 </div>
 
-
 <div class="main-content">
     <form method="get" class="filter-bar" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
         <div style="flex: 2; position: relative;">
             <i class="fas fa-search" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); color: #888;"></i>
-            <input type="text" name="SearchTerm" value="@Model.SearchTerm" placeholder="Buscar"
+            <input type="text" name="SearchTerm" value="@Model.SearchTerm" placeholder="Buscar empleado"
                    class="form-control" style="padding-left: 35px; width: 100%;" />
         </div>
 
-        <select class="form-control" style="width: 160px;">
-            <option disabled selected>Filtrar por</option>
-            <option>Nombre</option>
-            <option>Categoría</option>
-        </select>
-
-        <select class="form-control" style="width: 160px;">
-            <option disabled selected>Organizar por</option>
-            <option>Nombre</option>
-            <option>Precio</option>
+        <select name="SueldoFiltro" class="form-control" style="width: 180px;">
+            <option disabled selected>Filtrar por sueldo</option>
+            <option>Menor a $2,000</option>
+            <option>Mayor a $2,000</option>
         </select>
 
         <button type="submit" class="btn-guardar" style="height: 40px;">Buscar</button>
@@ -85,24 +78,24 @@
         <thead style="background-color: #eef2e0;">
             <tr>
                 <th>ID</th>
-                <th>Nombre del producto</th>
-                <th>Categoría</th>
-                <th>Cantidad de productos</th>
-                <th>Precio</th>
-                <th>Última actualización</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>Sueldo</th>
+                <th>Rol</th>
                 <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var producto in Model.Productos)
+            @foreach (var emp in Model.Empleados)
             {
                 <tr>
-                    <td>@producto.Id</td>
-                    <td>@producto.NombreProducto</td>
-                    <td>@producto.Categoria</td>
-                    <td>@producto.Cantidad</td>
-                    <td>$@producto.Precio.ToString("F2")</td>
-                    <td>@producto.UltimaActualizacion.ToString("dd/MM/yyyy")</td>
+                    <td>@emp.Id</td>
+                    <td>@emp.Nombre</td>
+                    <td>@emp.ApellidoPaterno</td>
+                    <td>@emp.ApellidoMaterno</td>
+                    <td>$@emp.Sueldo.ToString("N2")</td>
+                    <td>@emp.Rol</td>
                     <td style="text-align: center;">
                         <a href="#"><i class="fas fa-edit" style="color: #256B45; margin-right: 10px;"></i></a>
                         <a href="#"><i class="fas fa-trash-alt" style="color: crimson;"></i></a>
@@ -113,8 +106,8 @@
     </table>
 
     <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
-        <a href="/Inventario/AgregarProducto" class="btn-guardar" style="font-size: 1rem;">
-            <i href="/Inventario/AgregarProducto" class="fas fa-plus-circle" style="margin-right: 5px;"></i> Agregar producto
+        <a href="/Empleados/AgregarEmpleado" class="btn-guardar" style="font-size: 1rem;">
+            <i href="/Empleados/AgregarEmpleado" class="fas fa-user-plus" style="margin-right: 5px;"></i> Agregar empleado
         </a>
     </div>
 </div>

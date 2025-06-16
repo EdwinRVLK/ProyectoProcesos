@@ -1,0 +1,107 @@
+@page
+@model GimManager.Pages.Empleados.AgregarEmpleadoModel
+@{
+    ViewData["Title"] = "Agregar Empleado";
+}
+
+<link rel="stylesheet" href="~/css/lobby.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<div class="header-bar">
+    <div class="logo">
+        <a href="/Identity/lobby">
+            <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
+        </a>
+    </div>
+
+    <div class="header-title">
+        <h2 id="page-title">Agregar Empleado</h2>
+    </div>
+
+    <div class="icon-buttons">
+        <a href="/Identity/lobby"><i class="fas fa-home"></i></a>
+        <i class="fas fa-user-circle"></i>
+    </div>
+</div>
+
+<div class="menu-bar">
+    <div class="menu-item">
+        <a href="/Clientes/GestionCliente" style="text-decoration: none;">
+            <button>Usuarios</button>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <a href="/Inventario/Inventario" style="text-decoration: none;">
+            <button>Inventario</button>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <a href="/Empleados/Empleados" style="text-decoration: none;">
+            <button>Empleados</button>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Ventas y membresías</button>
+        <div class="dropdown-menu">
+            <a href="#">Punto de Venta</a>
+            <a href="#">Mostrar pagos</a>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Reportes</button>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="form-card" style="max-width: 900px; margin: auto;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">DATOS DEL EMPLEADO</h2>
+
+        <form method="post">
+            <div class="form-flex" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                <div style="flex: 1 1 45%;">
+                    <div class="form-group">
+                        <label style="font-weight: bold;">NOMBRE</label>
+                        <input asp-for="Empleado.Nombre" type="text" class="form-control" placeholder="Héctor" />
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-weight: bold;">APELLIDO PATERNO</label>
+                        <input asp-for="Empleado.ApellidoPaterno" type="text" class="form-control" placeholder="Mendoza" />
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-weight: bold;">APELLIDO MATERNO</label>
+                        <input asp-for="Empleado.ApellidoMaterno" type="text" class="form-control" placeholder="León" />
+                    </div>
+                </div>
+
+                <div style="flex: 1 1 45%;">
+                    <div class="form-group">
+                        <label style="font-weight: bold;">SUELDO</label>
+                        <input asp-for="Empleado.Sueldo" type="number" step="0.01" class="form-control" placeholder="$1,200" />
+                    </div>
+
+                    <div class="form-group">
+                        <label style="font-weight: bold;">ROL</label>
+                        <input asp-for="Empleado.Rol" type="text" class="form-control" placeholder="Nutriólogo" />
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <button type="submit" class="btn-guardar" style="background-color: #4CAF50; font-size: 1rem; padding: 0.8rem 2rem; border-radius: 2rem;">
+                    Agregar empleado
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/AddCliente.js"></script>
+}
