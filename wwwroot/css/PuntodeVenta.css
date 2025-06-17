@@ -1,0 +1,276 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #256B45;
+    white-space: nowrap;
+}
+
+.header-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #256B45;
+    margin: 0;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.icon-buttons i {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #2f5d40;
+}
+
+.icon-buttons i:hover {
+    color: #2f2f2f;
+}
+
+/* Navigation Menu */
+.menu-bar {
+    display: flex;
+    background-color: #2f5d40;
+    height: 60px;
+}
+
+.menu-item {
+    position: relative;
+    flex: 1;
+}
+
+.menu-item button {
+    width: 100%;
+    height: 100%;
+    background-color: #2f5d40;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    padding: 1.2rem 0;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Hover para cambiar el color de fondo */
+.menu-item button:hover {
+    background-color: #3d7e59;
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown-menu a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Barra horizontal de opciones */
+.horizontal-bar {
+    display: flex;
+    gap: 1rem;
+    background-color: #1a4a2f;
+    padding: 0.3rem;
+    border-bottom: 2px solid #ccc;
+}
+
+.horizontal-bar .bar-btn {
+    background-color: #256B45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: auto; /* Ajustar la altura */
+}
+
+.horizontal-bar .bar-btn:hover {
+    background-color: #3d7e59;
+}
+
+/* Main Content */
+.main-content {
+    padding: 0.5rem;
+}
+
+.search-container {
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Barra de búsqueda */
+.search-input {
+    flex: 6.5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de Agregar */
+.add-btn {
+    padding: 10px 120px;
+    font-size: 1rem;
+    background-color: #256B45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #3d7e59;
+}
+
+/* Menú desplegable para seleccionar cliente */
+.select-client {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Barra de productos */
+.product-container {
+    border-radius: 8px;
+    background-color: #fafafa;
+    padding: .1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Limitar el tamaño del contenedor de productos */
+    max-height: 300px;  /* Cambia este valor a lo que necesites */
+    overflow-y: auto;    /* Muestra barra de desplazamiento solo cuando sea necesario */
+}
+
+.product-header {
+    display: flex;
+    background-color: #1a4a2f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header-item {
+    flex: 1;
+    text-align: center;
+}
+
+.product-row {
+    display: flex;
+    padding: 10px;
+    background-color: #e8f7ea;
+    border-radius: 5px;
+}
+
+.product-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-quantity {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Contenedor del total */
+.total-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #256B45;
+}
+
+.total-item {
+    margin-right: 1rem;
+}
+
+/* Barra inferior con los botones */
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.bottom-bar .total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #256B45;
+}
+
+.bottom-bar .action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.bottom-bar .action-buttons .btn-action {
+    padding: 10px 20px;
+    background-color: #256B45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-bar .action-buttons .btn-action:hover {
+    background-color: #3d7e59;
+}

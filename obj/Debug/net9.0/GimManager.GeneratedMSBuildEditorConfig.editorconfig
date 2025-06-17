@@ -96,12 +96,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/edumw/PryGim/Pages/Reportes/Reportes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0ZXNcUmVwb3J0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/edumw/PryGim/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/edumw/PryGim/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumw/PryGim/Pages/VentasYpagos/MostrarPagos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFzWXBhZ29zXE1vc3RyYXJQYWdvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/edumw/PryGim/Pages/VentasYpagos/PuntodeVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFzWXBhZ29zXFB1bnRvZGVWZW50YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/edumw/PryGim/Pages/_ViewImports.cshtml]
