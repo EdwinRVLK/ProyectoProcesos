@@ -1,5 +1,5 @@
 @page
-@model GimManager.Pages.Clientes.AgregarClienteModel
+@model GimManager.Pages.Clientes.AddClienteModel
 @{
     ViewData["Title"] = "Agregar Cliente";
 }
@@ -10,11 +10,15 @@
 
 <div class="header-bar">
     <div class="logo">
-        <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
+        <a href="/Identity/lobby">
+            <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
+        </a>
     </div>
+
     <div class="header-title">
-        <h2>Agregar Cliente</h2>
+        <h2 id="page-title">Agregar Cliente Nuevo</h2>
     </div>
+
     <div class="icon-buttons">
         <a href="/Identity/lobby"><i class="fas fa-home"></i></a>
         <i class="fas fa-user-circle"></i>
@@ -27,23 +31,32 @@
             <button>Usuarios</button>
         </a>
     </div>
-    <div class="menu-item"><button onclick="toggleDropdown(this)">Inventario</button></div>
+
     <div class="menu-item">
-        <button onclick="toggleDropdown(this)">Empleados</button>
-        <div class="dropdown-menu">
-            <a href="#">Mostrar</a>
-            <a href="#">Agregar</a>
-            <a href="#">Eliminar</a>
-        </div>
+        <a href="/Inventario/Inventario" style="text-decoration: none;">
+            <button>Inventario</button>
+        </a>
     </div>
+
+    <div class="menu-item">
+        <a href="/Empleados/Empleados" style="text-decoration: none;">
+            <button>Empleados</button>
+        </a>
+    </div>
+
     <div class="menu-item">
         <button onclick="toggleDropdown(this)">Ventas y membresías</button>
         <div class="dropdown-menu">
-            <a href="#">Punto de Venta</a>
-            <a href="#">Mostrar pagos</a>
+            <a href="/VentasYpagos/PuntodeVenta">Punto de Venta</a>
+            <a href="/VentasYpagos/MostrarPagos">Mostrar pagos</a>
         </div>
     </div>
-    <div class="menu-item"><button onclick="toggleDropdown(this)">Reportes</button></div>
+
+    <div class="menu-item">
+        <a href="/Reportes/Reportes">
+            <button onclick="toggleDropdown(this)">Reportes</button>
+        </a>
+    </div>
 </div>
 
 <div class="main-content">
@@ -51,11 +64,6 @@
         <form method="post" enctype="multipart/form-data">
             <div class="form-flex">
                 <div class="form-left">
-                    <div class="form-group">
-                        <label asp-for="Cliente.Id">ID:</label>
-                        <input asp-for="Cliente.Id" class="form-control" />
-                    </div>
-
                     <div class="form-group">
                         <label asp-for="Cliente.Nombre">Nombre:</label>
                         <input asp-for="Cliente.Nombre" class="form-control" />
@@ -75,9 +83,21 @@
                         <label asp-for="Cliente.TipoMembresia">Tipo de membresía:</label>
                         <select asp-for="Cliente.TipoMembresia" class="form-control">
                             <option value="">Seleccionar...</option>
-                            <option value="Mensual">Mensual</option>
-                            <option value="Trimestral">Trimestral</option>
-                            <option value="Anual">Anual</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+                    </div>
+
+                    <!-- Sección para seleccionar el número de meses -->
+                    <div class="form-group">
+                        <label asp-for="Cliente.Meses">Número de meses:</label>
+                        <select asp-for="Cliente.Meses" class="form-control">
+                            <option value="0">Seleccionar...</option>
+                            <option value="1">1 mes</option>
+                            <option value="3">3 meses</option>
+                            <option value="6">6 meses</option>
+                            <option value="12">12 meses</option>
                         </select>
                     </div>
                 </div>
@@ -87,9 +107,8 @@
                     <input asp-for="Cliente.Foto" type="file" class="form-control" />
 
                     <div class="form-submit-right">
-                    <button type="submit" class="btn-guardar">Guardar Cliente</button>
+                        <button type="submit" class="btn-guardar">Guardar Cliente</button>
                     </div>
-                    
                 </div>
             </div>
         </form>

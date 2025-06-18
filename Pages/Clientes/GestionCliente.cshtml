@@ -10,13 +10,13 @@
 
 <div class="header-bar">
     <div class="logo">
-        <a href="/Identity/lobby">
+        <a href="/Lobby">
             <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
         </a>
     </div>
 
     <div class="header-title">
-        <h2>Inventario</h2>
+        <h2 id="page-title">Clientes</h2>
     </div>
 
     <div class="icon-buttons">
@@ -39,24 +39,23 @@
     </div>
 
     <div class="menu-item">
-        <button onclick="toggleDropdown(this)">Empleados</button>
-        <div class="dropdown-menu">
-            <a href="#">Mostrar</a>
-            <a href="#">Agregar</a>
-            <a href="#">Eliminar</a>
-        </div>
+        <a href="/Empleados/Empleados" style="text-decoration: none;">
+            <button>Empleados</button>
+        </a>
     </div>
 
     <div class="menu-item">
         <button onclick="toggleDropdown(this)">Ventas y membresías</button>
         <div class="dropdown-menu">
-            <a href="#">Punto de Venta</a>
-            <a href="#">Mostrar pagos</a>
+            <a href="/VentasYpagos/PuntodeVenta">Punto de Venta</a>
+            <a href="/VentasYpagos/MostrarPagos">Mostrar pagos</a>
         </div>
     </div>
 
     <div class="menu-item">
-        <button onclick="toggleDropdown(this)">Reportes</button>
+        <a href="/Reportes/Reportes">
+            <button onclick="toggleDropdown(this)">Reportes</button>
+        </a>
     </div>
 </div>
 
