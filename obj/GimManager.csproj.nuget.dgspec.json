@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edumw\\PryGim\\GimManager.csproj": {}
+    "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edumw\\PryGim\\GimManager.csproj": {
+    "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edumw\\PryGim\\GimManager.csproj",
+        "projectUniqueName": "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj",
         "projectName": "GimManager",
-        "projectPath": "C:\\Users\\edumw\\PryGim\\GimManager.csproj",
+        "projectPath": "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj",
         "packagesPath": "C:\\Users\\edumw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edumw\\PryGim\\obj\\",
+        "outputPath": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edumw\\AppData\\Roaming\\NuGet\\NuGet.Config"

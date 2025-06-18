@@ -1,3 +1,6 @@
+// Pages/Empleados/AgregarEmpleado.cshtml.cs
+using GimManager.Data;
+using GimManager.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -5,29 +8,35 @@ namespace GimManager.Pages.Empleados
 {
     public class AgregarEmpleadoModel : PageModel
     {
-        [BindProperty]
-        public EmpleadoInput Empleado { get; set; }
+        private readonly ApplicationDbContext _context;
 
-        public class EmpleadoInput
+        public AgregarEmpleadoModel(ApplicationDbContext context)
         {
-            public string Nombre { get; set; }
-            public string ApellidoPaterno { get; set; }
-            public string ApellidoMaterno { get; set; }
-            public decimal Sueldo { get; set; }
-            public string Rol { get; set; }
+            _context = context;
         }
 
-        public void OnGet() { }
+        [BindProperty]
+        public Empleado Empleado { get; set; } = new Empleado();
 
-        public IActionResult OnPost()
+        public void OnGet()
+        {
+            // Método vacío para cargar la página inicialmente
+        }
+
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
+            {
                 return Page();
+            }
 
-            // Aquí puedes guardar en DB o simular almacenamiento
-            TempData["Mensaje"] = "Empleado agregado correctamente.";
+            // Asignar fecha de ingreso automáticamente
+            Empleado.FechaIngreso = DateTime.Now;
 
-            return RedirectToPage("/Empleados/Empleados");
+            _context.Empleados.Add(Empleado);
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("./Empleados");
         }
     }
 }

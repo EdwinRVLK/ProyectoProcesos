@@ -13,6 +13,7 @@ namespace GimManager.Data
 
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Producto> Productos { get; set; }  // Añadido DbSet para Producto
+        public DbSet<Empleado> Empleados { get; set; } // Añadido DbSet para Empleado
 
     }
 }

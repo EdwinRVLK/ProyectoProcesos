@@ -17,113 +17,113 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GimManager
 build_property.RootNamespace = GimManager
-build_property.ProjectDir = C:\Users\edumw\PryGim\
+build_property.ProjectDir = C:\Users\edumw\ProyectoProcesos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\edumw\PryGim
+build_property.MSBuildProjectDirectory = C:\Users\edumw\ProyectoProcesos
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/lobby.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/lobby.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcbG9iYnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Clientes/AddCliente.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Clientes/AddCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcQWRkQ2xpZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Clientes/GestionCliente.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Clientes/GestionCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcR2VzdGlvbkNsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Empleados/AgregarEmpleado.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Empleados/AgregarEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbGVhZG9zXEFncmVnYXJFbXBsZWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Empleados/Empleados.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Empleados/Empleados.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbGVhZG9zXEVtcGxlYWRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Error.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Index.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Inventario/AgregarProducto.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Inventario/AgregarProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50YXJpb1xBZ3JlZ2FyUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Inventario/Inventario.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Inventario/Inventario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50YXJpb1xJbnZlbnRhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Privacy.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Reportes/Reportes.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Reportes/Reportes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0ZXNcUmVwb3J0ZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/VentasYpagos/MostrarPagos.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/VentasYpagos/MostrarPagos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFzWXBhZ29zXE1vc3RyYXJQYWdvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/VentasYpagos/PuntodeVenta.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/VentasYpagos/PuntodeVenta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFzWXBhZ29zXFB1bnRvZGVWZW50YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/_ViewImports.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/_ViewStart.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/edumw/PryGim/Pages/Shared/_Layout.cshtml]
+[C:/Users/edumw/ProyectoProcesos/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y9kjfu4y3h
