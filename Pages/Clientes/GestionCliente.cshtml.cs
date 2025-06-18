@@ -1,50 +1,55 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using GimManager.Data;
+using GimManager.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System;
 
 namespace GimManager.Pages.Clientes
 {
     public class GestionClienteModel : PageModel
     {
+        private readonly ApplicationDbContext _context;
+
         [BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
 
+        [BindProperty(SupportsGet = true)]
+        public string MembresiaFilter { get; set; }
+
         public List<Cliente> Clientes { get; set; } = new();
 
-        public class Cliente
+        public GestionClienteModel(ApplicationDbContext context)
         {
-            public int Id { get; set; }
-            public string Nombre { get; set; }
-            public string ApellidoPaterno { get; set; }
-            public string ApellidoMaterno { get; set; }
-            public string Telefono { get; set; }
-            public string Membresia { get; set; }
+            _context = context;
         }
 
-        public void OnGet()
+                public IActionResult OnGet()
         {
-            var todos = new List<Cliente>
+            try
             {
-                new Cliente { Id = 1, Nombre = "Juan", ApellidoPaterno = "López", ApellidoMaterno = "25", Telefono = "9275267892", Membresia = "VIP" },
-                new Cliente { Id = 2, Nombre = "María", ApellidoPaterno = "Hernández", ApellidoMaterno = "46", Telefono = "9235227892", Membresia = "Básica" },
-                new Cliente { Id = 3, Nombre = "Carlos", ApellidoPaterno = "Díaz", ApellidoMaterno = "78", Telefono = "9123450892", Membresia = "Estandar" },
-                new Cliente { Id = 4, Nombre = "Ana", ApellidoPaterno = "Ruiz", ApellidoMaterno = "90", Telefono = "9275265672", Membresia = "VIP" },
-                new Cliente { Id = 5, Nombre = "Sofía", ApellidoPaterno = "Vázquez", ApellidoMaterno = "2", Telefono = "9275209636", Membresia = "VIP" }
-            };
+                IQueryable<Cliente> query = _context.Clientes;
 
-            if (!string.IsNullOrWhiteSpace(SearchTerm))
-            {
-                Clientes = todos.Where(c =>
-                    c.Nombre.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                    c.ApellidoPaterno.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                    c.Telefono.Contains(SearchTerm)
-                ).ToList();
+                if (!string.IsNullOrWhiteSpace(SearchTerm))
+                {
+                    query = query.Where(c =>
+                        c.Nombre.Contains(SearchTerm) ||
+                        c.Apellido.Contains(SearchTerm) ||  // Buscar por apellido
+                        c.Telefono.Contains(SearchTerm));
+                }
+
+                if (!string.IsNullOrWhiteSpace(MembresiaFilter))
+                {
+                    query = query.Where(c => c.TipoMembresia == MembresiaFilter);  // Filtrar por TipoMembresia
+                }
+
+                Clientes = query.OrderBy(c => c.Apellido).ThenBy(c => c.Nombre).ToList();
+                return Page();
             }
-            else
+            catch (System.Exception ex)
             {
-                Clientes = todos;
+                // Log the error
+                return RedirectToPage("/Error");
             }
         }
     }

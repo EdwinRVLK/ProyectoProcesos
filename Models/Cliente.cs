@@ -8,56 +8,46 @@ namespace GimManager.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "El nombre es obligatorio")]
+        [StringLength(50, ErrorMessage = "El nombre no puede exceder 50 caracteres")]
         public string Nombre { get; set; } = string.Empty;
 
-        [Required]
-        public string Apellidos { get; set; } = string.Empty;
+        // Cambiado: Un solo apellido en lugar de paterno/materno
+        [Required(ErrorMessage = "El apellido es obligatorio")]
+        [StringLength(50, ErrorMessage = "El apellido no puede exceder 50 caracteres")]
+        public string Apellido { get; set; } = string.Empty;
 
-        [Required]
+        [Required(ErrorMessage = "El teléfono es obligatorio")]
+        [Phone(ErrorMessage = "Formato de teléfono inválido")]
         public string Telefono { get; set; } = string.Empty;
 
-        [Required]
+        // Cambiado: Usando TipoMembresia en lugar de Membresia
+        [Required(ErrorMessage = "El tipo de membresía es obligatorio")]
         public string TipoMembresia { get; set; } = string.Empty;
 
-        // Esta propiedad guardará la ruta de la imagen
         public string? RutaFoto { get; set; }
 
-        // Nueva propiedad para almacenar la fecha de vencimiento
+        [Display(Name = "Fecha de Vencimiento")]
         public DateTime FechaVencimiento { get; set; }
 
-        // Nueva propiedad para almacenar el precio de la membresía
+        [Display(Name = "Precio de Membresía")]
+        [DataType(DataType.Currency)]
         public decimal PrecioMembresia { get; set; }
 
-        // Método para calcular el precio y la fecha de vencimiento según el tipo de membresía y el número de meses
         public void CalcularPrecioYFechaVencimiento(int meses)
         {
             if (meses <= 0)
-            {
                 throw new ArgumentException("El número de meses debe ser mayor que 0.");
-            }
 
-            // Lógica para calcular la fecha de vencimiento
             FechaVencimiento = DateTime.Now.AddMonths(meses);
 
-            // Lógica para calcular el precio según el tipo de membresía
-            switch (TipoMembresia)
+            PrecioMembresia = TipoMembresia switch
             {
-                case "Normal":
-                    PrecioMembresia = 500 * meses; // Precio para membresía normal
-                    break;
-
-                case "Estudiante":
-                    PrecioMembresia = 300 * meses; // Precio para membresía estudiante
-                    break;
-
-                case "VIP":
-                    PrecioMembresia = 1000 * meses; // Precio para membresía VIP
-                    break;
-
-                default:
-                    throw new ArgumentException("Tipo de membresía no válido.");
-            }
+                "Normal" => 500 * meses,
+                "Estudiante" => 300 * meses,
+                "VIP" => 1000 * meses,
+                _ => throw new ArgumentException("Tipo de membresía no válido")
+            };
         }
     }
 }

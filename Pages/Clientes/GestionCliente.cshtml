@@ -67,46 +67,41 @@
                    class="form-control" style="padding-left: 35px; width: 100%;" />
         </div>
 
-        <select class="form-control" style="width: 160px;">
-            <option disabled selected>Filtrar por</option>
-            <option>Nombre</option>
-            <option>Membresía</option>
-        </select>
-
-        <select class="form-control" style="width: 160px;">
-            <option disabled selected>Organizar por</option>
-            <option>Nombre</option>
-            <option>ID</option>
+        <select name="MembresiaFilter" class="form-control" style="width: 160px;">
+            <option value="">Filtrar</option>
+            <option value="Normal" selected="@(Model.MembresiaFilter == "Normal")">Normal</option>
+            <option value="Estudiante" selected="@(Model.MembresiaFilter == "Estudiante")">Estudiante</option>
+            <option value="VIP" selected="@(Model.MembresiaFilter == "VIP")">VIP</option>
         </select>
 
         <button type="submit" class="btn-guardar" style="height: 40px;">Buscar</button>
     </form>
 
-    <table style="width: 100%; border-collapse: collapse; font-family: 'Inter';">
-        <thead style="background-color: #eef2e0;">
-            <tr>
-                <th style="padding: 8px; border: 1px solid #ccc;">ID</th>
-                <th style="padding: 8px; border: 1px solid #ccc;">Nombre</th>
-                <th style="padding: 8px; border: 1px solid #ccc;">Apellido paterno</th>
-                <th style="padding: 8px; border: 1px solid #ccc;">Apellido materno</th>
-                <th style="padding: 8px; border: 1px solid #ccc;">Teléfono</th>
-                <th style="padding: 8px; border: 1px solid #ccc;">Membresía</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var cliente in Model.Clientes)
-            {
+    <!-- Contenedor con scroll -->
+            <table style="width: 100%; border-collapse: collapse; font-family: 'Inter';">
+            <thead style="background-color: #eef2e0;">
                 <tr>
-                    <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Id</td>
-                    <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Nombre</td>
-                    <td style="padding: 8px; border: 1px solid #ccc;">@cliente.ApellidoPaterno</td>
-                    <td style="padding: 8px; border: 1px solid #ccc;">@cliente.ApellidoMaterno</td>
-                    <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Telefono</td>
-                    <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Membresia</td>
+                    <th style="padding: 8px; border: 1px solid #ccc;">ID</th>
+                    <th style="padding: 8px; border: 1px solid #ccc;">Nombre</th>
+                    <th style="padding: 8px; border: 1px solid #ccc;">Apellido</th>
+                    <th style="padding: 8px; border: 1px solid #ccc;">Teléfono</th>
+                    <th style="padding: 8px; border: 1px solid #ccc;">Membresía</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var cliente in Model.Clientes)
+                {
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Id</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Nombre</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Apellido</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Telefono</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.TipoMembresia</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
     <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 1rem;">
         <a href="/Clientes/AddCliente" class="btn-guardar" style="background-color: #1d8348;">

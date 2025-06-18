@@ -42,7 +42,7 @@ namespace GimManager.Pages.Clientes
             var nuevoCliente = new Cliente
             {
                 Nombre = Cliente.Nombre,
-                Apellidos = Cliente.Apellidos,
+                Apellido = Cliente.Apellido,
                 Telefono = Cliente.Telefono,
                 TipoMembresia = Cliente.TipoMembresia
             };
@@ -86,7 +86,7 @@ namespace GimManager.Pages.Clientes
             public string Nombre { get; set; } = string.Empty;
 
             [Required]
-            public string Apellidos { get; set; } = string.Empty;
+            public string Apellido { get; set; } = string.Empty;
 
             [Required]
             public string Telefono { get; set; } = string.Empty;
