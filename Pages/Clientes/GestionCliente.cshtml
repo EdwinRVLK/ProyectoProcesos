@@ -78,25 +78,31 @@
     </form>
 
     <!-- Contenedor con scroll -->
-            <table style="width: 100%; border-collapse: collapse; font-family: 'Inter';">
-            <thead style="background-color: #eef2e0;">
+            <div class="scroll-container">
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <th style="padding: 8px; border: 1px solid #ccc;">ID</th>
-                    <th style="padding: 8px; border: 1px solid #ccc;">Nombre</th>
-                    <th style="padding: 8px; border: 1px solid #ccc;">Apellido</th>
-                    <th style="padding: 8px; border: 1px solid #ccc;">Teléfono</th>
-                    <th style="padding: 8px; border: 1px solid #ccc;">Membresía</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Membresía</th>
+                    <th class="action-buttons">Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var cliente in Model.Clientes)
                 {
                     <tr>
-                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Id</td>
-                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Nombre</td>
-                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Apellido</td>
-                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.Telefono</td>
-                        <td style="padding: 8px; border: 1px solid #ccc;">@cliente.TipoMembresia</td>
+                        <td>@cliente.Id</td>
+                        <td>@cliente.Nombre</td>
+                        <td>@cliente.Apellido</td>
+                        <td>@cliente.Telefono</td>
+                        <td>@cliente.TipoMembresia</td>
+                        <td class="action-buttons">
+                            <a href="/Clientes/EditarCliente?id=@cliente.Id"><i class="fas fa-edit" style="color: #256B45;"></i></a>
+                            <a href="/Clientes/DeleteCliente?id=@cliente.Id"><i class="fas fa-trash-alt" style="color: crimson;"></i></a>
+                        </td>
                     </tr>
                 }
             </tbody>
@@ -106,12 +112,6 @@
     <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 1rem;">
         <a href="/Clientes/AddCliente" class="btn-guardar" style="background-color: #1d8348;">
             <i class="fas fa-user-plus" style="margin-right: 5px;"></i> Agregar
-        </a>
-        <a href="/Clientes/EditarCliente" class="btn-guardar">
-            <i class="fas fa-edit" style="margin-right: 5px;"></i> Editar
-        </a>
-        <a href="/Clientes/DeleteCliente" class="btn-guardar" style="background-color: crimson;">
-            <i class="fas fa-user-minus" style="margin-right: 5px;"></i> Eliminar
         </a>
     </div>
 </div>

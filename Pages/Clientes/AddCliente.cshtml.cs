@@ -76,7 +76,7 @@ namespace GimManager.Pages.Clientes
             await _context.SaveChangesAsync();
 
             TempData["Mensaje"] = "Cliente agregado exitosamente.";
-            return RedirectToPage("/Clientes/AddCliente");
+            return RedirectToPage("/Clientes/GestionCliente");
         }
 
         // Modelo de entrada para el cliente
