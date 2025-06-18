@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>aehxxgrafd</Fingerprint>
-      <Integrity>UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE=</Integrity>
+      <Fingerprint>hl0mgqxrk0</Fingerprint>
+      <Integrity>e8sbUyuGfZbpOGXgMnCq/SG5svKxFZFA+ozDZZ1mACk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PuntodeVenta.js'))</OriginalItemSpec>

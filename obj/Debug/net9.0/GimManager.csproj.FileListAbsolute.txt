@@ -1251,4 +1251,4 @@ C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\GimManager.pdb
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\GimManager.genruntimeconfig.cache
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\ref\GimManager.dll
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\ovw0doy5oi-sx1cibvatk.gz
-C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\vvur3neul9-aehxxgrafd.gz
+C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\vvur3neul9-hl0mgqxrk0.gz

@@ -272,7 +272,7 @@ function registrarSalida() {
         return;
     }
 
-    fetch("/VentasYpagos/PuntoDeVenta?handler=RegistrarSalida", {
+    fetch("/VentasYpagos/PuntodeVenta?handler=RegistrarSalida", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ monto, descripcion })

@@ -91,6 +91,30 @@ namespace GimManager.Pages.VentasYpagos
             }
         }
 
+        // Actualizamos este método para manejar "salidas" en vez de "entradas"
+        [IgnoreAntiforgeryToken]
+        public async Task<IActionResult> OnPostRegistrarSalidaAsync()
+        {
+            try
+            {
+                using var reader = new StreamReader(Request.Body);
+                var body = await reader.ReadToEndAsync();
+                var salida = JsonSerializer.Deserialize<Salida>(body, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                if (salida == null || salida.Monto <= 0 || string.IsNullOrWhiteSpace(salida.Descripcion))
+                    return new JsonResult(new { success = false, message = "Datos inválidos." });
+
+                salida.Fecha = DateTime.Now;
+                _context.Salidas.Add(salida);  // Guardamos la salida de dinero (gasto)
+                await _context.SaveChangesAsync();
+
+                return new JsonResult(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(new { success = false, message = ex.Message });
+            }
+        }
 
         [IgnoreAntiforgeryToken]
         public async Task<IActionResult> OnPostRegistrarEntradaAsync()
@@ -99,13 +123,13 @@ namespace GimManager.Pages.VentasYpagos
             {
                 using var reader = new StreamReader(Request.Body);
                 var body = await reader.ReadToEndAsync();
-                var entrada = JsonSerializer.Deserialize<Salida>(body, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var entrada = JsonSerializer.Deserialize<Entrada>(body, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
                 if (entrada == null || entrada.Monto <= 0 || string.IsNullOrWhiteSpace(entrada.Descripcion))
                     return new JsonResult(new { success = false, message = "Datos inválidos." });
 
                 entrada.Fecha = DateTime.Now;
-                _context.Salidas.Add(entrada);
+                _context.Entradas.Add(entrada);  // Guardamos la entrada de dinero (ingreso)
                 await _context.SaveChangesAsync();
 
                 return new JsonResult(new { success = true });
