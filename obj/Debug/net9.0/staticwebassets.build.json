@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LLEMYhRXnngQ2uM1oDJ4ZQu1r6MiCuRCzIIrOGKi4tU=",
+  "Hash": "li9Zt0K5K8nw4TTUpGIlnrSAN5ONAR/d0cRm3dyBNJw=",
   "Source": "GimManager",
   "BasePath": "_content/GimManager",
   "Mode": "Default",
@@ -2999,12 +2999,12 @@
       "OriginalItemSpec": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sl6gtxkh4y.gz",
+      "Identity": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sx1cibvatk.gz",
       "SourceId": "GimManager",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GimManager",
-      "RelativePath": "css/PuntodeVenta#[.{fingerprint=sl6gtxkh4y}]?.css.gz",
+      "RelativePath": "css/PuntodeVenta#[.{fingerprint=sx1cibvatk}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3013,8 +3013,8 @@
       "RelatedAsset": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\PuntodeVenta.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8fbdgv9e7z",
-      "Integrity": "7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA=",
+      "Fingerprint": "uty9xv2ndx",
+      "Integrity": "kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\PuntodeVenta.css"
@@ -3818,12 +3818,12 @@
       "OriginalItemSpec": "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.6\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-odgxz3549g.gz",
+      "Identity": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-aehxxgrafd.gz",
       "SourceId": "GimManager",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/GimManager",
-      "RelativePath": "js/PuntodeVenta#[.{fingerprint=odgxz3549g}]?.js.gz",
+      "RelativePath": "js/PuntodeVenta#[.{fingerprint=aehxxgrafd}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3832,8 +3832,8 @@
       "RelatedAsset": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lgqajoi59w",
-      "Integrity": "dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y=",
+      "Fingerprint": "thj3lmehu6",
+      "Integrity": "cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js"
@@ -4336,8 +4336,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sl6gtxkh4y",
-      "Integrity": "kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0=",
+      "Fingerprint": "sx1cibvatk",
+      "Integrity": "MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\PuntodeVenta.css"
@@ -4525,8 +4525,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "odgxz3549g",
-      "Integrity": "LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U=",
+      "Fingerprint": "aehxxgrafd",
+      "Integrity": "UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\PuntodeVenta.js"
@@ -7306,12 +7306,12 @@
     },
     {
       "Route": "css/PuntodeVenta.css",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sl6gtxkh4y.gz",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sx1cibvatk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000621890547"
+          "Quality": "0.000454132607"
         }
       ],
       "ResponseHeaders": [
@@ -7321,15 +7321,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1607"
+          "Value": "2201"
         },
         {
           "Name": "ETag",
-          "Value": "\"7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA=\""
+          "Value": "\"kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:12:15 GMT"
+          "Value": "Wed, 18 Jun 2025 21:39:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7349,13 +7349,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0=\""
+          "Value": "W/\"MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0="
+          "Value": "sha256-MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso="
         }
       ]
     },
@@ -7370,7 +7370,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6360"
+          "Value": "10256"
         },
         {
           "Name": "Content-Type",
@@ -7378,11 +7378,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0=\""
+          "Value": "\"MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:12:15 GMT"
+          "Value": "Wed, 18 Jun 2025 21:39:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7392,13 +7392,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0="
+          "Value": "sha256-MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso="
         }
       ]
     },
     {
       "Route": "css/PuntodeVenta.css.gz",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sl6gtxkh4y.gz",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sx1cibvatk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7407,7 +7407,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1607"
+          "Value": "2201"
         },
         {
           "Name": "Content-Type",
@@ -7415,11 +7415,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA=\""
+          "Value": "\"kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:12:15 GMT"
+          "Value": "Wed, 18 Jun 2025 21:39:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7437,18 +7437,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA="
+          "Value": "sha256-kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ="
         }
       ]
     },
     {
-      "Route": "css/PuntodeVenta.sl6gtxkh4y.css",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sl6gtxkh4y.gz",
+      "Route": "css/PuntodeVenta.sx1cibvatk.css",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sx1cibvatk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000621890547"
+          "Quality": "0.000454132607"
         }
       ],
       "ResponseHeaders": [
@@ -7458,15 +7458,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1607"
+          "Value": "2201"
         },
         {
           "Name": "ETag",
-          "Value": "\"7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA=\""
+          "Value": "\"kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:12:15 GMT"
+          "Value": "Wed, 18 Jun 2025 21:39:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7486,13 +7486,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0=\""
+          "Value": "W/\"MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sl6gtxkh4y"
+          "Value": "sx1cibvatk"
         },
         {
           "Name": "label",
@@ -7500,12 +7500,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0="
+          "Value": "sha256-MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso="
         }
       ]
     },
     {
-      "Route": "css/PuntodeVenta.sl6gtxkh4y.css",
+      "Route": "css/PuntodeVenta.sx1cibvatk.css",
       "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\PuntodeVenta.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7515,7 +7515,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6360"
+          "Value": "10256"
         },
         {
           "Name": "Content-Type",
@@ -7523,11 +7523,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0=\""
+          "Value": "\"MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:12:15 GMT"
+          "Value": "Wed, 18 Jun 2025 21:39:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7537,7 +7537,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sl6gtxkh4y"
+          "Value": "sx1cibvatk"
         },
         {
           "Name": "label",
@@ -7545,13 +7545,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kJnyvwKrKwqycXrenZYC8I4hOEtR4kkY7Zy8KiYtIS0="
+          "Value": "sha256-MJ3WpKw3Z6HGI/WXjrvEX5X1onXOrxfgpdtbf37uoso="
         }
       ]
     },
     {
-      "Route": "css/PuntodeVenta.sl6gtxkh4y.css.gz",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sl6gtxkh4y.gz",
+      "Route": "css/PuntodeVenta.sx1cibvatk.css.gz",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\ovw0doy5oi-sx1cibvatk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7560,7 +7560,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1607"
+          "Value": "2201"
         },
         {
           "Name": "Content-Type",
@@ -7568,11 +7568,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA=\""
+          "Value": "\"kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:12:15 GMT"
+          "Value": "Wed, 18 Jun 2025 21:39:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7590,7 +7590,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sl6gtxkh4y"
+          "Value": "sx1cibvatk"
         },
         {
           "Name": "label",
@@ -7598,7 +7598,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7IgAHu1PScS8mTnS3iVtfbzFmOQOX9lm6fZWezxiUIA="
+          "Value": "sha256-kpWFFiD9AegBnZ3fMfICWNyBZx3cOAJ7vMNneVdo5OQ="
         }
       ]
     },
@@ -8223,7 +8223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8276,7 +8276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8313,7 +8313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8360,7 +8360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8413,7 +8413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8450,7 +8450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8497,7 +8497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8558,7 +8558,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8603,7 +8603,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8658,7 +8658,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8719,7 +8719,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8764,7 +8764,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:45:36 GMT"
+          "Value": "Wed, 18 Jun 2025 21:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18250,13 +18250,13 @@
       ]
     },
     {
-      "Route": "js/PuntodeVenta.js",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-odgxz3549g.gz",
+      "Route": "js/PuntodeVenta.aehxxgrafd.js",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-aehxxgrafd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000473709143"
+          "Quality": "0.000411692054"
         }
       ],
       "ResponseHeaders": [
@@ -18266,19 +18266,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2110"
+          "Value": "2428"
         },
         {
           "Name": "ETag",
-          "Value": "\"dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y=\""
+          "Value": "\"cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:35:24 GMT"
+          "Value": "Wed, 18 Jun 2025 21:34:40 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -18294,18 +18294,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U=\""
+          "Value": "W/\"UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "aehxxgrafd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/PuntodeVenta.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U="
+          "Value": "sha256-UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE="
         }
       ]
     },
     {
-      "Route": "js/PuntodeVenta.js",
+      "Route": "js/PuntodeVenta.aehxxgrafd.js",
       "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -18315,7 +18323,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6631"
+          "Value": "8376"
         },
         {
           "Name": "Content-Type",
@@ -18323,121 +18331,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U=\""
+          "Value": "\"UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:35:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U="
-        }
-      ]
-    },
-    {
-      "Route": "js/PuntodeVenta.js.gz",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-odgxz3549g.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2110"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:35:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y="
-        }
-      ]
-    },
-    {
-      "Route": "js/PuntodeVenta.odgxz3549g.js",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-odgxz3549g.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000473709143"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2110"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:35:24 GMT"
+          "Value": "Wed, 18 Jun 2025 21:34:40 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "odgxz3549g"
+          "Value": "aehxxgrafd"
         },
         {
           "Name": "label",
@@ -18445,13 +18353,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U="
+          "Value": "sha256-UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE="
         }
       ]
     },
     {
-      "Route": "js/PuntodeVenta.odgxz3549g.js",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js",
+      "Route": "js/PuntodeVenta.aehxxgrafd.js.gz",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-aehxxgrafd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -18460,7 +18368,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6631"
+          "Value": "2428"
         },
         {
           "Name": "Content-Type",
@@ -18468,56 +18376,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U=\""
+          "Value": "\"cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:35:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "odgxz3549g"
-        },
-        {
-          "Name": "label",
-          "Value": "js/PuntodeVenta.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LBCGLeU9dDZdqPAEqWbAeYQeZcTjXeNupnrbV7AzU0U="
-        }
-      ]
-    },
-    {
-      "Route": "js/PuntodeVenta.odgxz3549g.js.gz",
-      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-odgxz3549g.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2110"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Jun 2025 20:35:24 GMT"
+          "Value": "Wed, 18 Jun 2025 21:34:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18535,7 +18398,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "odgxz3549g"
+          "Value": "aehxxgrafd"
         },
         {
           "Name": "label",
@@ -18543,7 +18406,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dVdtT4hncK5SVlcS72oCVhfg1I3WAr6mRzhRkF1bp6Y="
+          "Value": "sha256-cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw="
+        }
+      ]
+    },
+    {
+      "Route": "js/PuntodeVenta.js",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-aehxxgrafd.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000411692054"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2428"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 21:34:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE="
+        }
+      ]
+    },
+    {
+      "Route": "js/PuntodeVenta.js",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 21:34:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UgeIqVMkM5ATZStOgK+EtBt0UOfe0nks1APtTP9GHVE="
+        }
+      ]
+    },
+    {
+      "Route": "js/PuntodeVenta.js.gz",
+      "AssetFile": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\compressed\\vvur3neul9-aehxxgrafd.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 21:34:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfKBfmQG2a1XdfyV4i1JF6pDmk1mOiL9QdNYpQ0Bfdw="
         }
       ]
     },

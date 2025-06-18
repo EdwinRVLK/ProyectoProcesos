@@ -201,4 +201,106 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
         console.log("✅ El modalBuscar está presente en el DOM.");
     }
-});
+})
+
+// 🔴 Modal para Registrar Entrada
+function abrirModalEntrada() {
+    document.getElementById("modalEntrada").style.display = "flex";
+}
+
+function cerrarModalEntrada() {
+    document.getElementById("modalEntrada").style.display = "none";
+}
+
+function registrarEntrada() {
+    const monto = parseFloat(document.getElementById("entradaMonto").value);
+    const descripcion = document.getElementById("entradaDescripcion").value.trim();
+
+    if (!monto || monto <= 0 || !descripcion) {
+        mostrarMensaje("Ingresa un monto y una descripción válidos.");
+        return;
+    }
+
+    fetch("/VentasYpagos/PuntoDeVenta?handler=RegistrarEntrada", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ monto, descripcion })
+    })
+    .then(async res => {
+        const text = await res.text();
+
+        // Log completo de la respuesta cruda
+        console.log("📨 Respuesta cruda del servidor:", text);
+
+        try {
+            const data = JSON.parse(text);
+
+            if (data.success) {
+                mostrarMensaje("✅ Entrada registrada correctamente", "green");
+                cerrarModalEntrada();
+                document.getElementById("entradaMonto").value = "";
+                document.getElementById("entradaDescripcion").value = "";
+            } else {
+                mostrarMensaje("❌ " + data.message);
+            }
+        } catch (e) {
+            console.error("❌ Error al interpretar JSON:", e);
+            mostrarMensaje("Respuesta inválida del servidor.");
+        }
+    })
+    .catch(err => {
+        console.error("❌ Error en fetch:", err);
+        mostrarMensaje("Error al registrar entrada.");
+    });
+}
+
+// 🔴 Modal para Registrar Salida
+function abrirModalSalida() {
+    document.getElementById("modalSalida").style.display = "flex";
+}
+
+function cerrarModalSalida() {
+    document.getElementById("modalSalida").style.display = "none";
+}
+
+function registrarSalida() {
+    const monto = parseFloat(document.getElementById("salidaMonto").value);
+    const descripcion = document.getElementById("salidaDescripcion").value.trim();
+
+    if (!monto || monto <= 0 || !descripcion) {
+        mostrarMensaje("Ingresa un monto y una descripción válidos.");
+        return;
+    }
+
+    fetch("/VentasYpagos/PuntoDeVenta?handler=RegistrarSalida", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ monto, descripcion })
+    })
+    .then(async res => {
+        const text = await res.text();
+
+        // Log completo de la respuesta cruda
+        console.log("📨 Respuesta cruda del servidor:", text);
+
+        try {
+            const data = JSON.parse(text);
+
+            if (data.success) {
+                mostrarMensaje("✅ Salida registrada correctamente", "green");
+                cerrarModalSalida();
+                document.getElementById("salidaMonto").value = "";
+                document.getElementById("salidaDescripcion").value = "";
+            } else {
+                mostrarMensaje("❌ " + data.message);
+            }
+        } catch (e) {
+            console.error("❌ Error al interpretar JSON:", e);
+            mostrarMensaje("Respuesta inválida del servidor.");
+        }
+    })
+    .catch(err => {
+        console.error("❌ Error en fetch:", err);
+        mostrarMensaje("Error al registrar salida.");
+    });
+}

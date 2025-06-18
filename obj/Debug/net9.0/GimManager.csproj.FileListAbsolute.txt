@@ -1169,12 +1169,10 @@ C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\yekopgrgkn-v1nnst51s
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\3t9pc0sn7d-1fgy3offrc.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\mmcem1m757-zayx6a48rv.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\1q5adnx1ot-smvbdats8x.gz
-C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\ovw0doy5oi-sl6gtxkh4y.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\nu4ravsiga-f0es2hwuw8.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\wfp1uwuhot-61n19gt1b8.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\bkaimd2221-a5qcaqukez.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\ahg2bkdxlz-94ucsb3cf9.gz
-C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\vvur3neul9-odgxz3549g.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\skmyyialm9-xtxxf3hu2r.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\ohd2fce6l2-t1cqhe9u97.gz
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\agbm9mpj9g-c2jlpeoesf.gz
@@ -1252,3 +1250,5 @@ C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\refint\GimManager.dll
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\GimManager.pdb
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\GimManager.genruntimeconfig.cache
 C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\ref\GimManager.dll
+C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\ovw0doy5oi-sx1cibvatk.gz
+C:\Users\edumw\ProyectoProcesos\obj\Debug\net9.0\compressed\vvur3neul9-aehxxgrafd.gz

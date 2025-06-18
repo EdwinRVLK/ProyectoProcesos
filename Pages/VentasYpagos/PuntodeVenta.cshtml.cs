@@ -90,5 +90,30 @@ namespace GimManager.Pages.VentasYpagos
                 return new JsonResult(new { success = false, message = "Error del servidor: " + ex.Message });
             }
         }
+
+
+        [IgnoreAntiforgeryToken]
+        public async Task<IActionResult> OnPostRegistrarEntradaAsync()
+        {
+            try
+            {
+                using var reader = new StreamReader(Request.Body);
+                var body = await reader.ReadToEndAsync();
+                var entrada = JsonSerializer.Deserialize<Salida>(body, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                if (entrada == null || entrada.Monto <= 0 || string.IsNullOrWhiteSpace(entrada.Descripcion))
+                    return new JsonResult(new { success = false, message = "Datos inválidos." });
+
+                entrada.Fecha = DateTime.Now;
+                _context.Salidas.Add(entrada);
+                await _context.SaveChangesAsync();
+
+                return new JsonResult(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return new JsonResult(new { success = false, message = ex.Message });
+            }
+        }
     }
 }
