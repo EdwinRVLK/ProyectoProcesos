@@ -274,3 +274,55 @@ body {
 .bottom-bar .action-buttons .btn-action:hover {
     background-color: #3d7e59;
 }
+
+.modal-inv {
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex; justify-content: center; align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-header .close {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tabla-busqueda {
+    margin-top: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.tabla-busqueda .producto-item {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+#buscarInput {
+    width: 100%;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}

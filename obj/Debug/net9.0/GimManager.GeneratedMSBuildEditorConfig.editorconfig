@@ -108,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/edumw/ProyectoProcesos/Pages/VentasYpagos/InventarioAPI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFzWXBhZ29zXEludmVudGFyaW9BUEkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/edumw/ProyectoProcesos/Pages/VentasYpagos/MostrarPagos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVudGFzWXBhZ29zXE1vc3RyYXJQYWdvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

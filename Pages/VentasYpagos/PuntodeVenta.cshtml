@@ -27,84 +27,76 @@
 
 <div class="menu-bar">
     <div class="menu-item">
-        <a href="/Clientes/GestionCliente" style="text-decoration: none;">
-            <button>Usuarios</button>
-        </a>
+        <a href="/Clientes/GestionCliente"><button>Usuarios</button></a>
     </div>
-
     <div class="menu-item">
-        <a href="/Inventario/Inventario" style="text-decoration: none;">
-            <button>Inventario</button>
-        </a>
+        <a href="/Inventario/Inventario"><button>Inventario</button></a>
     </div>
-
     <div class="menu-item">
-        <a href="/Empleados/Empleados" style="text-decoration: none;">
-            <button>Empleados</button>
-        </a>
+        <a href="/Empleados/Empleados"><button>Empleados</button></a>
     </div>
-
     <div class="menu-item">
         <button onclick="toggleDropdown(this)">Ventas y membresías</button>
         <div class="dropdown-menu">
-            <a href="/VentasYpagos/PuntodeVenta">Punto de Venta</a>
+            <a href="/VentasYpagos/PuntoDeVenta">Punto de Venta</a>
             <a href="/VentasYpagos/MostrarPagos">Mostrar pagos</a>
         </div>
     </div>
-
     <div class="menu-item">
-        <a href="/Reportes/Reportes">
-            <button onclick="toggleDropdown(this)">Reportes</button>
-        </a>
+        <a href="/Reportes/Reportes"><button>Reportes</button></a>
     </div>
 </div>
 
 <div class="main-content">
-    <!-- Barra de Búsqueda y Agregar -->
+
+    <!-- Mensajes de estado -->
+    <div id="pv-message" style="margin-bottom: 1rem; color: crimson; font-weight: bold;"></div>
+
+    <!-- Buscador -->
     <div class="search-container">
         <input type="text" id="searchProduct" placeholder="Buscar producto por código" class="form-control search-input" />
         <button class="btn-guardar add-btn" onclick="addProductToSale()">Agregar</button>
     </div>
 
-    <!-- Barra horizontal de opciones -->
+    <!-- Opciones adicionales -->
     <div class="horizontal-bar">
-        <button class="bar-btn">Art. común</button>
-        <button class="bar-btn">Buscar</button>
+        <button class="bar-btn" onclick="abrirModalBuscar()">Buscar</button>
         <button class="bar-btn">Entradas</button>
         <button class="bar-btn">Salidas</button>
-        <button class="bar-btn">Borrar Art.</button>
+        <button class="bar-btn" onclick="vaciarCarrito()">Vaciar carrito</button>
     </div>
 
-    <!-- Tabla de Productos -->
+    <!-- Tabla -->
     <div class="product-container">
-        <!-- Barra con los nombres de las columnas -->
         <div class="product-header">
             <div class="header-item">Código</div>
             <div class="header-item">Descripción</div>
-            <div class="header-item">Precio venta</div>
+            <div class="header-item">Precio</div>
             <div class="header-item">Cantidad</div>
             <div class="header-item">Importe</div>
-            <div class="header-item">Existencia</div>
         </div>
-
-        <!-- Mostrar productos -->
-        <div id="saleProducts"></div> <!-- Aquí se mostrarán los productos agregados -->
-</div>
-        
+        <div id="saleProducts"></div>
     </div>
 
-    <!-- Barra inferior con los botones de acción -->
     <div class="bottom-bar">
-        <!-- Botón de cobrar -->
         <div class="action-buttons">
-            <button class="btn-action">Cobrar</button>
-            <button class="btn-action">Ventas y devoluciones</button>
-            <button class="btn-action">Reimprimir ticket</button>
+            <button class="btn-action" onclick="finalizarVenta()">Cobrar</button>
         </div>
-
-        <!-- Total a la derecha -->
         <div class="total-price">
-            $0.00
+            $<span id="totalPrice">0.00</span>
+        </div>
+    </div>
+
+        <div id="modalBuscar" class="modal-inv" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Buscar Producto</h3>
+                <span class="close" onclick="cerrarModalBuscar()">&times;</span>
+            </div>
+            <input type="text" id="buscarInput" placeholder="Buscar por nombre..." oninput="filtrarProductos()" />
+            <div id="resultadoBusqueda" class="tabla-busqueda">
+                <em>Cargando inventario...</em>
+            </div>
         </div>
     </div>
 </div>
