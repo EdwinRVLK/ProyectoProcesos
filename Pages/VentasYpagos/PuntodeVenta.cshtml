@@ -1,5 +1,5 @@
 @page
-@model GimManager.Pages.PuntoDeVenta.PuntoDeVentaModel
+@model GimManager.Pages.VentasYpagos.PuntoDeVentaModel
 @{
     ViewData["Title"] = "Punto de Venta";
 }
@@ -62,8 +62,8 @@
 <div class="main-content">
     <!-- Barra de Búsqueda y Agregar -->
     <div class="search-container">
-        <input type="text" placeholder="Buscar producto" class="form-control search-input" />
-        <button class="btn-guardar add-btn">Agregar</button>
+        <input type="text" id="searchProduct" placeholder="Buscar producto por código" class="form-control search-input" />
+        <button class="btn-guardar add-btn" onclick="addProductToSale()">Agregar</button>
     </div>
 
     <!-- Barra horizontal de opciones -->
@@ -88,19 +88,9 @@
         </div>
 
         <!-- Mostrar productos -->
-        @foreach (var producto in Model.Productos)
-        {
-            <div class="product-row">
-                <div class="product-item">@producto.Codigo</div>
-                <div class="product-item">@producto.Descripcion</div>
-                <div class="product-item">@producto.PrecioVenta.ToString("C2")</div>
-                <div class="product-item">
-                    <input type="number" value="@producto.Cantidad" min="1" max="@producto.Existencia" class="product-quantity" />
-                </div>
-                <div class="product-item">@producto.Importe.ToString("C2")</div>
-                <div class="product-item">@producto.Existencia</div>
-            </div>
-        }
+        <div id="saleProducts"></div> <!-- Aquí se mostrarán los productos agregados -->
+</div>
+        
     </div>
 
     <!-- Barra inferior con los botones de acción -->

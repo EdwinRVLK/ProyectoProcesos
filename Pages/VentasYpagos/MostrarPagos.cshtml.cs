@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GimManager.Pages.Ventas
+namespace GimManager.Pages.VentasYpagos
 {
     public class MostrarPagosModel : PageModel
     {
