@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GimManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0398a8bd3d16d9a0bc6405f9227272f82d36e094")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d08a370594cea1252e37b11edaf1dd0b047e0c99")]
 [assembly: System.Reflection.AssemblyProductAttribute("GimManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GimManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -76,38 +76,41 @@
         <button type="submit" class="btn-guardar" style="height: 40px;">Buscar</button>
     </form>
 
-    <table style="width: 100%; border-collapse: collapse; font-family: 'Inter';">
-        <thead style="background-color: #eef2e0;">
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido Paterno</th>
-                <th>Apellido Materno</th>
-                <th>Sueldo</th>
-                <th>Rol</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var emp in Model.Empleados)
-            {
+    <!-- Contenedor con scroll -->
+    <div class="scroll-container">
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>@emp.Id</td>
-                    <td>@emp.Nombre</td>
-                    <td>@emp.ApellidoPaterno</td>
-                    <td>@emp.ApellidoMaterno</td>
-                    <td>$@emp.Sueldo.ToString("N2")</td>
-                    <td>@emp.Rol</td>
-                    <td style="text-align: center;">
-                        <a href="#"><i class="fas fa-edit" style="color: #256B45; margin-right: 10px;"></i></a>
-                        <a href="#"><i class="fas fa-trash-alt" style="color: crimson;"></i></a>
-                    </td>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Sueldo</th>
+                    <th>Rol</th>
+                    <th class="action-buttons">Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var emp in Model.Empleados)
+                {
+                    <tr>
+                        <td>@emp.Id</td>
+                        <td>@emp.Nombre</td>
+                        <td>@emp.ApellidoPaterno</td>
+                        <td>@emp.ApellidoMaterno</td>
+                        <td>$@emp.Sueldo.ToString("N2")</td>
+                        <td>@emp.Rol</td>
+                        <td class="action-buttons">
+                            <a href="/Empleados/EditarEmpleado?id=@emp.Id"><i class="fas fa-edit" style="color: #256B45;"></i></a>
+                            <a href="/Empleados/DeleteEmpleado?id=@emp.Id"><i class="fas fa-trash-alt" style="color: crimson;"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 
-    <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+    <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 1rem;">
         <a href="/Empleados/AgregarEmpleado" class="btn-guardar" style="font-size: 1rem;">
             <i href="/Empleados/AgregarEmpleado" class="fas fa-user-plus" style="margin-right: 5px;"></i> Agregar empleado
         </a>

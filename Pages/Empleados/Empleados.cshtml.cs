@@ -1,62 +1,57 @@
+using GimManager.Data;
+using GimManager.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace GimManager.Pages.Empleados
 {
     public class EmpleadosModel : PageModel
     {
-        [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; }
+        private readonly ApplicationDbContext _context;
 
         [BindProperty(SupportsGet = true)]
-        public string SueldoFiltro { get; set; }
+        public string SearchTerm { get; set; } // Para búsqueda por nombre, apellido paterno o materno
 
-        public List<Empleado> Empleados { get; set; } = new();
+        [BindProperty(SupportsGet = true)]
+        public string SueldoFiltro { get; set; } // Para filtro de sueldo
 
-        public class Empleado
+        public List<Empleado> Empleados { get; set; }
+
+        // Constructor para inyectar ApplicationDbContext
+        public EmpleadosModel(ApplicationDbContext context)
         {
-            public int Id { get; set; }
-            public string Nombre { get; set; }
-            public string ApellidoPaterno { get; set; }
-            public string ApellidoMaterno { get; set; }
-            public decimal Sueldo { get; set; }
-            public string Rol { get; set; }
+            _context = context;
         }
 
+        // Método OnGet para recuperar los empleados desde la base de datos
         public void OnGet()
         {
-            var todos = new List<Empleado>
-            {
-                new Empleado { Id = 1, Nombre = "Juan", ApellidoPaterno = "López", ApellidoMaterno = "Ruiz", Sueldo = 1200m, Rol = "Entrenador" },
-                new Empleado { Id = 2, Nombre = "Maria", ApellidoPaterno = "Hernández", ApellidoMaterno = "López", Sueldo = 1500m, Rol = "Limpieza" },
-                new Empleado { Id = 3, Nombre = "Carlos", ApellidoPaterno = "Díaz", ApellidoMaterno = "Casanova", Sueldo = 1200m, Rol = "Entrenador" },
-                new Empleado { Id = 4, Nombre = "Jose", ApellidoPaterno = "Díaz", ApellidoMaterno = "Estrada", Sueldo = 2000m, Rol = "Recepcionista" },
-                new Empleado { Id = 5, Nombre = "Fernando", ApellidoPaterno = "Sulvaran", ApellidoMaterno = "Maldonado", Sueldo = 5000m, Rol = "Gerente" }
-            };
+            IQueryable<Empleado> query = _context.Empleados;
 
+            // Filtro de búsqueda por nombre, apellido paterno o apellido materno
             if (!string.IsNullOrWhiteSpace(SearchTerm))
             {
-                todos = todos.Where(e =>
-                    e.Nombre.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                    e.ApellidoPaterno.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                    e.ApellidoMaterno.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
-                    e.Rol.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase)
-                ).ToList();
+                query = query.Where(e => e.Nombre.Contains(SearchTerm) ||
+                                         e.ApellidoPaterno.Contains(SearchTerm) ||
+                                         e.ApellidoMaterno.Contains(SearchTerm));
             }
 
-            if (SueldoFiltro == "Menor a $2,000")
+            // Filtro por sueldo
+            if (!string.IsNullOrWhiteSpace(SueldoFiltro))
             {
-                todos = todos.Where(e => e.Sueldo < 2000m).ToList();
-            }
-            else if (SueldoFiltro == "Mayor a $2,000")
-            {
-                todos = todos.Where(e => e.Sueldo >= 2000m).ToList();
+                if (SueldoFiltro == "Menor a $2,000")
+                {
+                    query = query.Where(e => e.Sueldo < 2000);
+                }
+                else if (SueldoFiltro == "Mayor a $2,000")
+                {
+                    query = query.Where(e => e.Sueldo > 2000);
+                }
             }
 
-            Empleados = todos;
+            // Cargar los empleados filtrados
+            Empleados = query.ToList();
         }
     }
 }

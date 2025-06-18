@@ -235,3 +235,74 @@ body {
 .btn-guardar:hover {
     background-color: #1d4f35;
 }
+
+.btn-guardar i {
+    margin-right: 5px;
+}
+
+/* Estilos para el botón de eliminar */
+.btn-eliminar {
+    background-color: crimson;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #b30000;
+}
+
+/* Estilos para los filtros */
+.filter-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* Estilos para los dropdowns */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+    min-width: 160px;
+    border-radius: 4px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el scrollbar personalizado (opcional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
