@@ -1,347 +1,347 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\GimManager.bundle.scp.css",
-      "PackagePath": "staticwebassets\\GimManager.y4hwrrjzyf.bundle.scp.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/obj/Debug/net9.0/scopedcss/projectbundle/GimManager.bundle.scp.css",
+      "PackagePath": "staticwebassets/GimManager.fqoi9ahxe7.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\Clientes.css",
-      "PackagePath": "staticwebassets\\css\\Clientes.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/Clientes.css",
+      "PackagePath": "staticwebassets/css/Clientes.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\PuntodeVenta.css",
-      "PackagePath": "staticwebassets\\css\\PuntodeVenta.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/PuntodeVenta.css",
+      "PackagePath": "staticwebassets/css/PuntodeVenta.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\addEmpleado.css",
-      "PackagePath": "staticwebassets\\css\\addEmpleado.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/addEmpleado.css",
+      "PackagePath": "staticwebassets/css/addEmpleado.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\gestioncliente.css",
-      "PackagePath": "staticwebassets\\css\\gestioncliente.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/gestioncliente.css",
+      "PackagePath": "staticwebassets/css/gestioncliente.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\inventario.css",
-      "PackagePath": "staticwebassets\\css\\inventario.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/inventario.css",
+      "PackagePath": "staticwebassets/css/inventario.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\lobby.css",
-      "PackagePath": "staticwebassets\\css\\lobby.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/lobby.css",
+      "PackagePath": "staticwebassets/css/lobby.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\login.css",
-      "PackagePath": "staticwebassets\\css\\login.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\imagenes\\LogoRecortado.png",
-      "PackagePath": "staticwebassets\\imagenes\\LogoRecortado.png"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/imagenes/LogoRecortado.png",
+      "PackagePath": "staticwebassets/imagenes/LogoRecortado.png"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\imagenes\\a2a37ee043adf470.png",
-      "PackagePath": "staticwebassets\\imagenes\\a2a37ee043adf470.png"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/imagenes/a2a37ee043adf470.png",
+      "PackagePath": "staticwebassets/imagenes/a2a37ee043adf470.png"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\imagenes\\imagenLogo.png",
-      "PackagePath": "staticwebassets\\imagenes\\imagenLogo.png"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/imagenes/imagenLogo.png",
+      "PackagePath": "staticwebassets/imagenes/imagenLogo.png"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\imagenes\\imgLogin.jpg",
-      "PackagePath": "staticwebassets\\imagenes\\imgLogin.jpg"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/imagenes/imgLogin.jpg",
+      "PackagePath": "staticwebassets/imagenes/imgLogin.jpg"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\AddCliente.js",
-      "PackagePath": "staticwebassets\\js\\AddCliente.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/AddCliente.js",
+      "PackagePath": "staticwebassets/js/AddCliente.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\Empleado.js",
-      "PackagePath": "staticwebassets\\js\\Empleado.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/Empleado.js",
+      "PackagePath": "staticwebassets/js/Empleado.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\Inventario.js",
-      "PackagePath": "staticwebassets\\js\\Inventario.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/Inventario.js",
+      "PackagePath": "staticwebassets/js/Inventario.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js",
-      "PackagePath": "staticwebassets\\js\\PuntodeVenta.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/PuntodeVenta.js",
+      "PackagePath": "staticwebassets/js/PuntodeVenta.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\editarcliente.js",
-      "PackagePath": "staticwebassets\\js\\editarcliente.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/editarcliente.js",
+      "PackagePath": "staticwebassets/js/editarcliente.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\lobby.js",
-      "PackagePath": "staticwebassets\\js\\lobby.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/lobby.js",
+      "PackagePath": "staticwebassets/js/lobby.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
     },
     {
-      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+      "Id": "/home/dard/Workshop/GitHub/ProyectoProcesos/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.GimManager.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.GimManager.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.GimManager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.GimManager.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.GimManager.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.GimManager.props",
       "PackagePath": "build\\GimManager.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.GimManager.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.GimManager.props",
       "PackagePath": "buildMultiTargeting\\GimManager.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.GimManager.props",
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.GimManager.props",
       "PackagePath": "buildTransitive\\GimManager.props"
     }
   ],

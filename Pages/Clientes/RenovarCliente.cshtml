@@ -1,0 +1,66 @@
+@page "{id:int}"
+@model GimManager.Pages.Clientes.RenovarClienteModel
+@{
+    ViewData["Title"] = "Renovar Membresía";
+}
+
+<h2>Renovar Membresía para @Model.Cliente.Nombre @Model.Cliente.Apellido</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Cliente.Id" />
+    <input type="hidden" asp-for="Cliente.Nombre" />
+    <input type="hidden" asp-for="Cliente.TipoMembresia" />
+    <input type="hidden" asp-for="Cliente.Apellido" />
+    <input type="hidden" asp-for="Cliente.Telefono" />
+
+    <div class="mb-3">
+        <label asp-for="TipoMembresia" class="form-label">Tipo de Membresía</label>
+        <select asp-for="TipoMembresia" class="form-select" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Normal">Normal</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="VIP">VIP</option>
+        </select>
+        <span asp-validation-for="TipoMembresia" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Meses" class="form-label">Meses</label>
+        <input asp-for="Meses" type="number" min="1" class="form-control" required />
+        <span asp-validation-for="Meses" class="text-danger"></span>
+    </div>
+
+    <div class="alert alert-info d-none" id="calculoResultado"></div>
+
+    <button type="submit" class="btn btn-success">Renovar</button>
+    <a asp-page="/Clientes/GestionCliente" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        const tipoField = document.getElementById("TipoMembresia");
+        const mesesField = document.getElementById("Meses");
+        const resultadoDiv = document.getElementById("calculoResultado");
+
+        function calcular() {
+            const tipo = tipoField.value;
+            const meses = parseInt(mesesField.value);
+            if (!tipo || !meses || meses <= 0) {
+                resultadoDiv.classList.add("d-none");
+                return;
+            }
+
+            const precios = { Normal: 500, Estudiante: 300, VIP: 1000 };
+            const total = precios[tipo] * meses;
+            const fecha = new Date();
+            fecha.setMonth(fecha.getMonth() + meses);
+
+            resultadoDiv.classList.remove("d-none");
+            resultadoDiv.innerText = `Total: $${total} — Vence el ${fecha.toLocaleDateString()}`;
+        }
+
+        tipoField.addEventListener("change", calcular);
+        mesesField.addEventListener("input", calcular);
+    </script>
+}
