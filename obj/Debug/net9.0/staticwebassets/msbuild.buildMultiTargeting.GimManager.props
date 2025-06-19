@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/GimManager.props" />
+  <Import Project="..\build\GimManager.props" />
 </Project>

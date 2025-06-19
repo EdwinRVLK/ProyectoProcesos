@@ -61,30 +61,29 @@ namespace GimManager.Pages.Clientes
         }
 
         public async Task<IActionResult> OnPostDeleteAsync(int id)
-{
-    try
-    {
-        var cliente = await _context.Clientes.FindAsync(id);
-        
-        if (cliente == null)
         {
-            TempData["ErrorMessage"] = "Cliente no encontrado";
+            try
+            {
+                var cliente = await _context.Clientes.FindAsync(id);
+                
+                if (cliente == null)
+                {
+                    TempData["ErrorMessage"] = "Cliente no encontrado";
+                    return RedirectToPage();
+                }
+
+                // Eliminar el cliente
+                _context.Clientes.Remove(cliente);
+                await _context.SaveChangesAsync();
+
+                TempData["SuccessMessage"] = $"Cliente {cliente.Nombre} eliminado correctamente";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Error al eliminar: {ex.Message}";
+            }
+
             return RedirectToPage();
         }
-
-        // Eliminar el cliente
-        _context.Clientes.Remove(cliente);
-        await _context.SaveChangesAsync();
-
-        TempData["SuccessMessage"] = $"Cliente {cliente.Nombre} eliminado correctamente";
-    }
-    catch (Exception ex)
-    {
-        TempData["ErrorMessage"] = $"Error al eliminar: {ex.Message}";
-    }
-
-    return RedirectToPage();
-}
-
     }
 }

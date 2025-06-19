@@ -8,7 +8,7 @@
 
 @{
     ViewData["Title"] = "Inicio";
-    var nombreUsuario = User.Identity?.Name ?? "Usuario";
+    var nombreUsuario = User.Identity?.Name ?? "Usuario no autenticado"; // Asegúrate de que siempre haya un nombre
 }
 
 <link rel="stylesheet" href="~/css/lobby.css" />
@@ -17,13 +17,13 @@
 
 <div class="header-bar">
     <div class="logo">
-        <a href="/Lobby">
+        <a href="/Identity/lobby">
             <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
         </a>
     </div>
 
     <div class="header-title">
-        <h2 id="page-title">Inicio</h2>
+        <h2 id="page-title">Bienvenido, @nombreUsuario</h2> <!-- Se muestra el nombre del usuario -->
     </div>
 
     <div class="icon-buttons">
@@ -75,13 +75,30 @@
         </div>
     </div>
 
-    <div class="container-grid">
-        <div class="content-box">Caja 1</div>
-        <div class="content-box">Caja 2</div>
-        <div class="content-box">Caja 3</div>
-        <div class="content-box">Caja 4</div>
-        <div class="content-box">Caja 5</div>
-        <div class="content-box">Caja 6</div>
+        <div class="container-grid">
+        <!-- Caja de Usuarios Registrados -->
+        <div class="content-box">
+            <h3>Usuarios Registrados</h3>
+            <p>@Model.TotalUsuarios</p> <!-- Muestra el número total de usuarios registrados -->
+        </div>
+
+        <!-- Caja de Empleados Totales -->
+        <div class="content-box">
+            <h3>Empleados Totales</h3>
+            <p>@Model.TotalEmpleados</p> <!-- Muestra el número total de empleados registrados -->
+        </div>
+
+        <!-- Caja de Ventas del Día -->
+        <div class="content-box">
+            <h3>Ventas del Día</h3>
+            <p>$@Model.VentasDia.ToString("F2")</p> <!-- Muestra el total de ventas del día -->
+        </div>
+
+        <!-- Caja de Ventas del Mes -->
+        <div class="content-box">
+            <h3>Ventas del Mes</h3>
+            <p>$@Model.VentasMes.ToString("F2")</p> <!-- Muestra el total de ventas del mes -->
+        </div>
     </div>
 </div>
 

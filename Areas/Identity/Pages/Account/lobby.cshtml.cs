@@ -1,14 +1,42 @@
-using Microsoft.AspNetCore.Authorization;
+using GimManager.Data;
+using GimManager.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GimManager.Pages.Inicio
 {
-    [Authorize]
     public class PrincipalModel : PageModel
     {
-        public void OnGet()
+        private readonly ApplicationDbContext _context;
+
+        public int TotalUsuarios { get; set; }
+        public int TotalEmpleados { get; set; }
+        public decimal VentasDia { get; set; } // Total ventas del día
+        public decimal VentasMes { get; set; } // Total ventas del mes
+
+        public PrincipalModel(ApplicationDbContext context)
         {
-            // Aquí puedes agregar lógica para recuperar datos del usuario, rutinas, etc.
+            _context = context;
+        }
+
+        public async Task OnGetAsync()
+        {
+            // Contar clientes
+            TotalUsuarios = await _context.Clientes.CountAsync();
+            // Contar empleados
+            TotalEmpleados = await _context.Empleados.CountAsync();
+
+            // Obtener el total de ventas realizadas hoy
+            VentasDia = await _context.VentasMembresias
+                .Where(v => v.Fecha.Date == System.DateTime.Now.Date)
+                .SumAsync(v => v.Total);
+
+            // Obtener el total de ventas realizadas este mes
+            VentasMes = await _context.VentasMembresias
+                .Where(v => v.Fecha.Month == System.DateTime.Now.Month && v.Fecha.Year == System.DateTime.Now.Year)
+                .SumAsync(v => v.Total);
         }
     }
 }
