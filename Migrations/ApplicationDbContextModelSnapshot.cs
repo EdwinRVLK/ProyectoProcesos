@@ -251,6 +251,38 @@ namespace GimManager.Migrations
                     b.ToTable("Productos");
                 });
 
+            modelBuilder.Entity("GimManager.Models.Reporte", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("FechaDesde")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("FechaGenerado")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("FechaHasta")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("IngresoMembresias")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("IngresoProductos")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TotalMembresias")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TotalProductos")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Reportes");
+                });
+
             modelBuilder.Entity("GimManager.Models.Salida", b =>
                 {
                     b.Property<int>("Id")

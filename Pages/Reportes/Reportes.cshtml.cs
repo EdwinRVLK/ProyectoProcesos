@@ -1,67 +1,81 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using GimManager.Data;
+using GimManager.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace GimManager.Pages.Reportes
 {
     public class ReportesModel : PageModel
     {
-        [BindProperty(SupportsGet = true)]
-        public string TipoReporte { get; set; } = "Total de Ingresos";
+        private readonly ApplicationDbContext _context;
 
-        [BindProperty(SupportsGet = true)]
-        public DateTime FechaDesde { get; set; } = DateTime.Now.AddMonths(-1);
-
-        [BindProperty(SupportsGet = true)]
-        public DateTime FechaHasta { get; set; } = DateTime.Now;
-
-        [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; }
-
-        public List<Reporte> Reportes { get; set; }
-
-        public void OnGet()
+        public ReportesModel(ApplicationDbContext context)
         {
-            // Simulación de datos - reemplazar con acceso a base de datos real
-            Reportes = ObtenerReportesFiltrados();
+            _context = context;
         }
 
-        private List<Reporte> ObtenerReportesFiltrados()
+        [BindProperty]
+        public DateTime FechaDesde { get; set; } = DateTime.Today.AddMonths(-1);
+
+        [BindProperty]
+        public DateTime FechaHasta { get; set; } = DateTime.Today;
+
+        public List<Reporte> Reportes { get; set; } = new();
+
+        public async Task OnGetAsync()
         {
-            // Aquí iría la lógica para filtrar según los parámetros
-            // Esta es solo una simulación con datos de prueba
-            return new List<Reporte>
+            Reportes = await _context.Reportes
+                .OrderByDescending(r => r.FechaGenerado)
+                .ToListAsync();
+        }
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (FechaDesde > FechaHasta)
             {
-                new Reporte 
-                { 
-                    Fecha = DateTime.Now, 
-                    MembresiasVendidas = 10, 
-                    IngresosMembresias = 5000, 
-                    ProductosVendidos = 20, 
-                    IngresosProductos = 2000, 
-                    IngresoTotal = 7000 
-                },
-                new Reporte 
-                { 
-                    Fecha = DateTime.Now.AddDays(-1), 
-                    MembresiasVendidas = 5, 
-                    IngresosMembresias = 2500, 
-                    ProductosVendidos = 30, 
-                    IngresosProductos = 3000, 
-                    IngresoTotal = 5500 
-                }
-            };
-        }
-    }
+                ModelState.AddModelError(string.Empty, "La fecha Desde no puede ser mayor que la Hasta.");
+                await OnGetAsync();
+                return Page();
+            }
 
-    public class Reporte
-    {
-        public DateTime Fecha { get; set; }
-        public int MembresiasVendidas { get; set; }
-        public decimal IngresosMembresias { get; set; }
-        public int ProductosVendidos { get; set; }
-        public decimal IngresosProductos { get; set; }
-        public decimal IngresoTotal { get; set; }
+            DateTime inicio = FechaDesde.Date;
+            DateTime fin = FechaHasta.Date.AddDays(1);
+
+            // Obtener datos para el reporte
+            var ventas = await _context.Ventas
+                .Where(v => v.Fecha >= inicio && v.Fecha < fin)
+                .Include(v => v.Detalles)
+                .ToListAsync();
+
+            var ventasMembresia = await _context.VentasMembresias
+                .Where(vm => vm.Fecha >= inicio && vm.Fecha < fin)
+                .ToListAsync();
+
+            int totalProductos = ventas.Sum(v => v.Detalles.Sum(d => d.Cantidad));
+            decimal ingresoProductos = ventas.Sum(v => v.Total);
+
+            int totalMembresias = ventasMembresia.Count;
+            decimal ingresoMembresias = ventasMembresia.Sum(vm => vm.Total);
+
+            var nuevoReporte = new Reporte
+            {
+                FechaDesde = FechaDesde,
+                FechaHasta = FechaHasta,
+                TotalProductos = totalProductos,
+                TotalMembresias = totalMembresias,
+                IngresoProductos = ingresoProductos,
+                IngresoMembresias = ingresoMembresias
+            };
+
+            _context.Reportes.Add(nuevoReporte);
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage();
+        }
     }
 }

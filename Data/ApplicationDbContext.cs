@@ -19,6 +19,7 @@ namespace GimManager.Data
         public DbSet<Salida> Salidas { get; set; } // Añadido DbSet para Salida
         public DbSet<Entrada> Entradas { get; set; } // Añadido DbSet para Entrada
         public DbSet<VentaMembresia> VentasMembresias { get; set; } // Añadido DbSet para VentaMembresia
+        public DbSet<Reporte> Reportes { get; set; } // Añadido DbSet para Reporte
 
     }
 }

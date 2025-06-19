@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj": {}
+    "/home/dard/Workshop/GitHub/ProyectoProcesos/GimManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj": {
+    "/home/dard/Workshop/GitHub/ProyectoProcesos/GimManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj",
+        "projectUniqueName": "/home/dard/Workshop/GitHub/ProyectoProcesos/GimManager.csproj",
         "projectName": "GimManager",
-        "projectPath": "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj",
-        "packagesPath": "C:\\Users\\edumw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edumw\\ProyectoProcesos\\obj\\",
+        "projectPath": "/home/dard/Workshop/GitHub/ProyectoProcesos/GimManager.csproj",
+        "packagesPath": "/home/dard/.nuget/packages/",
+        "outputPath": "/home/dard/Workshop/GitHub/ProyectoProcesos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\edumw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/dard/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -84,6 +84,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

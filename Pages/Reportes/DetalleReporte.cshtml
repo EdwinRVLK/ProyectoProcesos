@@ -1,0 +1,86 @@
+@page "{id:int}"
+@model GimManager.Pages.Reportes.DetalleReporteModel
+@{
+    ViewData["Title"] = "Detalle del Reporte";
+}
+
+<h2>Detalle del Reporte #@Model.Reporte.Id</h2>
+
+<p><strong>Fecha generado:</strong> @Model.Reporte.FechaGenerado.ToString("yyyy-MM-dd HH:mm")</p>
+<p><strong>Rango:</strong> @Model.Reporte.FechaDesde.ToString("yyyy-MM-dd") — @Model.Reporte.FechaHasta.ToString("yyyy-MM-dd")</p>
+<p><strong>Total productos vendidos:</strong> @Model.Reporte.TotalProductos</p>
+<p><strong>Total membresías vendidas:</strong> @Model.Reporte.TotalMembresias</p>
+<p><strong>Ingreso por productos:</strong> $@Model.Reporte.IngresoProductos</p>
+<p><strong>Ingreso por membresías:</strong> $@Model.Reporte.IngresoMembresias</p>
+<p><strong>Ingreso total:</strong> $@Model.Reporte.IngresoTotal</p>
+
+<hr />
+
+<h3>Ventas de Productos</h3>
+@if (Model.Ventas.Any())
+{
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>Productos Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var venta in Model.Ventas)
+            {
+                <tr>
+                    <td>@venta.Fecha.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>$@venta.Total</td>
+                    <td>
+                        <ul>
+                            @foreach (var detalle in venta.Detalles)
+                            {
+                                <li>@detalle.NombreProducto (x@detalle.Cantidad) — $@detalle.Importe</li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay ventas de productos para este reporte.</p>
+}
+
+<h3>Ventas de Membresías</h3>
+@if (Model.VentasMembresia.Any())
+{
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Tipo</th>
+                <th>Meses</th>
+                <th>Concepto</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vm in Model.VentasMembresia)
+            {
+                <tr>
+                    <td>@vm.Fecha.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@vm.Cliente?.Nombre @vm.Cliente?.Apellido</td>
+                    <td>@vm.TipoMembresia</td>
+                    <td>@vm.Meses</td>
+                    <td>@vm.Concepto</td>
+                    <td>$@vm.Total</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay ventas de membresías para este reporte.</p>
+}

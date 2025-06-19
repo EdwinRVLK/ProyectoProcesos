@@ -133,7 +133,7 @@
                         <td>@cliente.Telefono</td>
                         <td>@cliente.TipoMembresia</td>
                         <td class="action-buttons">
-                            <a href="/Clientes/EditarCliente?id=@cliente.Id" class="btn-action">
+                            <a asp-page="/Clientes/EditarCliente" asp-route-id="@cliente.Id" class="btn-action">
                                 <i class="fas fa-edit"></i>
                             </a>
                             <form method="post" asp-page-handler="Delete" asp-route-id="@cliente.Id" class="delete-form">

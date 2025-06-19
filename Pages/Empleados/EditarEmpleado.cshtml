@@ -1,0 +1,113 @@
+@page "/Empleados/EditarEmpleado"
+@model GimManager.Pages.Empleados.EditarEmpleadoModel
+
+@{
+    ViewData["Title"] = "Editar Empleado";
+}
+
+<link rel="stylesheet" href="~/css/lobby.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+
+<div class="header-bar">
+    <div class="logo">
+        <a href="/Lobby">
+            <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
+        </a>
+    </div>
+
+    <div class="header-title">
+        <h2 id="page-title">Editar Empleado</h2>
+    </div>
+
+    <div class="icon-buttons">
+        <a href="/Identity/lobby"><i class="fas fa-home"></i></a>
+        <i class="fas fa-user-circle"></i>
+    </div>
+</div>
+
+<div class="menu-bar">
+    <div class="menu-item">
+        <a href="/Clientes/GestionCliente" style="text-decoration: none;">
+            <button>Usuarios</button>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="/Inventario/Inventario" style="text-decoration: none;">
+            <button>Inventario</button>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="/Empleados/Empleados" style="text-decoration: none;">
+            <button>Empleados</button>
+        </a>
+    </div>
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Ventas y membresías</button>
+        <div class="dropdown-menu">
+            <a href="/VentasYpagos/PuntodeVenta">Punto de Venta</a>
+            <a href="/VentasYpagos/MostrarPagos">Mostrar pagos</a>
+        </div>
+    </div>
+    <div class="menu-item">
+        <a href="/Reportes/Reportes">
+            <button onclick="toggleDropdown(this)">Reportes</button>
+        </a>
+    </div>
+</div>
+
+<div class="main-content">
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Empleado.Id" />
+
+        <div class="form-card">
+            <div class="form-flex">
+                <div class="form-left">
+                    <div class="form-group">
+                        <label asp-for="Empleado.Nombre">Nombre:</label>
+                        <input asp-for="Empleado.Nombre" class="form-control" />
+                        <span asp-validation-for="Empleado.Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Empleado.ApellidoPaterno">Apellido Paterno:</label>
+                        <input asp-for="Empleado.ApellidoPaterno" class="form-control" />
+                        <span asp-validation-for="Empleado.ApellidoPaterno" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Empleado.ApellidoMaterno">Apellido Materno:</label>
+                        <input asp-for="Empleado.ApellidoMaterno" class="form-control" />
+                        <span asp-validation-for="Empleado.ApellidoMaterno" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Empleado.Sueldo">Sueldo:</label>
+                        <input asp-for="Empleado.Sueldo" class="form-control" />
+                        <span asp-validation-for="Empleado.Sueldo" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Empleado.Rol">Rol:</label>
+                        <input asp-for="Empleado.Rol" class="form-control" />
+                        <span asp-validation-for="Empleado.Rol" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Empleado.FechaIngreso">Fecha de Ingreso:</label>
+                        <input asp-for="Empleado.FechaIngreso" type="date" class="form-control" />
+                        <span asp-validation-for="Empleado.FechaIngreso" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-right">
+                    <button type="submit" class="btn-guardar">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,4 +1,4 @@
-@page "/Clientes/EditarCliente"
+@page "/Clientes/EditarCliente/{id:int}"
 @model GimManager.Pages.Clientes.EditarClienteModel
 
 @{
@@ -58,9 +58,20 @@
 
 <div class="main-content">
     <form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Cliente.Id" />
         <div class="form-card">
             <div class="form-flex">
                 <div class="form-left">
+                    <div class="form-group">
+                        <label asp-for="Cliente.TipoMembresia">Tipo de Membresía:</label>
+                        <select asp-for="Cliente.TipoMembresia" class="form-control">
+                            <option value="">-- Selecciona --</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+                        <span asp-validation-for="Cliente.TipoMembresia" class="text-danger"></span>
+                    </div>
                     <div class="form-group">
                         <label asp-for="Cliente.Nombre">Nombre:</label>
                         <input asp-for="Cliente.Nombre" class="form-control" />
@@ -89,5 +100,5 @@
 </div>
 
 @section Scripts {
-    <script src="~/js/EditarCliente.js"></script>
+    <script src="~/js/editarcliente.js"></script>
 }

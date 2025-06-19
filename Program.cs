@@ -56,6 +56,7 @@ app.UseAuthorization();
 app.Use(async (context, next) => {
     if (!context.User.Identity.IsAuthenticated &&
         !context.Request.Path.StartsWithSegments("/Identity/Account/Login") &&
+        !context.Request.Path.StartsWithSegments("/Identity/Account/Register") &&
         !context.Request.Path.StartsWithSegments("/Error"))
     {
         context.Response.Redirect("/Identity/Account/Login?returnUrl=" + Uri.EscapeDataString(context.Request.Path));
