@@ -16,10 +16,11 @@ window.addEventListener('click', function (e) {
 })
 
 function confirmDelete(id, nombre) {
-            if (confirm(`¿Seguro que deseas eliminar a ${nombre}?`)) {
-                document.getElementById(`deleteForm-${id}`).submit();
-            }
-        }
+    if (confirm(`¿Seguro que deseas eliminar a ${nombre}?`)) {
+        document.getElementById(`deleteForm-${id}`).submit();
+    }
+}
+
 
 // wwwroot/js/AddCliente.js
 document.addEventListener('DOMContentLoaded', function() {

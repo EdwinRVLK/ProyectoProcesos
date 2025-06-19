@@ -136,8 +136,8 @@
                             <a asp-page="/Clientes/EditarCliente" asp-route-id="@cliente.Id" class="btn-action">
                                 <i class="fas fa-edit"></i>
                             </a>
-                            <form method="post" asp-page-handler="Delete" asp-route-id="@cliente.Id" class="delete-form">
-                                <button type="button" onclick="confirmarEliminacion(event, @cliente.Id, '@cliente.Nombre')" 
+                            <form id="deleteForm-@cliente.Id" method="post" asp-page-handler="Delete" asp-route-id="@cliente.Id" class="delete-form">
+                                <button type="button" onclick="confirmDelete(@cliente.Id, '@cliente.Nombre')" 
                                         class="btn-action btn-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </button>
@@ -157,5 +157,5 @@
 </div>
 
 @section Scripts {
-    <script></script>
+    <script src="~/js/AddCliente.js"></script>
 }

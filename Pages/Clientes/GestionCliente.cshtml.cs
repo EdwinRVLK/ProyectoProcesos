@@ -61,40 +61,30 @@ namespace GimManager.Pages.Clientes
         }
 
         public async Task<IActionResult> OnPostDeleteAsync(int id)
+{
+    try
+    {
+        var cliente = await _context.Clientes.FindAsync(id);
+        
+        if (cliente == null)
         {
-            try
-            {
-                // 1. Buscar el cliente
-                var cliente = await _context.Clientes.FindAsync(id);
-                
-                if (cliente == null)
-                {
-                    TempData["ErrorMessage"] = "Cliente no encontrado";
-                    return RedirectToPage();
-                }
-
-                // 2. Buscar y eliminar ventas de membresía asociadas
-                var ventasMembresias = _context.VentasMembresias
-                    .Where(v => v.ClienteId == id)
-                    .ToList();
-
-                if (ventasMembresias.Any())
-                {
-                    _context.VentasMembresias.RemoveRange(ventasMembresias);
-                }
-
-                // 3. Eliminar el cliente
-                _context.Clientes.Remove(cliente);
-                await _context.SaveChangesAsync();
-
-                TempData["SuccessMessage"] = $"Cliente {cliente.Nombre} eliminado correctamente";
-            }
-            catch (Exception ex)
-            {
-                TempData["ErrorMessage"] = $"Error al eliminar: {ex.Message}";
-            }
-
+            TempData["ErrorMessage"] = "Cliente no encontrado";
             return RedirectToPage();
         }
+
+        // Eliminar el cliente
+        _context.Clientes.Remove(cliente);
+        await _context.SaveChangesAsync();
+
+        TempData["SuccessMessage"] = $"Cliente {cliente.Nombre} eliminado correctamente";
+    }
+    catch (Exception ex)
+    {
+        TempData["ErrorMessage"] = $"Error al eliminar: {ex.Message}";
+    }
+
+    return RedirectToPage();
+}
+
     }
 }
