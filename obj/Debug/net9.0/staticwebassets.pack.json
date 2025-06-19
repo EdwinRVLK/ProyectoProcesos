@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\addEmpleado.css"
     },
     {
+      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\gestioncliente.css",
+      "PackagePath": "staticwebassets\\css\\gestioncliente.css"
+    },
+    {
       "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\css\\inventario.css",
       "PackagePath": "staticwebassets\\css\\inventario.css"
     },

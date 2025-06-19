@@ -17,6 +17,10 @@ namespace GimManager.Pages.Clientes
         [BindProperty]
         public ClienteInputModel Cliente { get; set; } = new();
 
+        // Propiedad para mostrar el total en la vista
+        [BindProperty]
+        public decimal TotalCalculado { get; set; }
+
         public AddClienteModel(ApplicationDbContext context)
         {
             _context = context;
@@ -47,8 +51,9 @@ namespace GimManager.Pages.Clientes
                 TipoMembresia = Cliente.TipoMembresia
             };
 
-            // Calcular el precio y la fecha de vencimiento usando el modelo
+            // Calcular el precio y la fecha de vencimiento
             nuevoCliente.CalcularPrecioYFechaVencimiento(Cliente.Meses);
+            TotalCalculado = nuevoCliente.PrecioMembresia;
 
             // Guardar foto si se ha subido
             string rutaFoto = string.Empty;
@@ -57,7 +62,6 @@ namespace GimManager.Pages.Clientes
                 var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "imagenes");
                 var filePath = Path.Combine(uploadsFolder, Cliente.Foto.FileName);
 
-                // Asegurarse de que la carpeta exista
                 Directory.CreateDirectory(uploadsFolder);
 
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
@@ -65,37 +69,51 @@ namespace GimManager.Pages.Clientes
                     await Cliente.Foto.CopyToAsync(fileStream);
                 }
 
-                rutaFoto = "/imagenes/" + Cliente.Foto.FileName; // Ruta relativa
+                rutaFoto = "/imagenes/" + Cliente.Foto.FileName;
             }
 
-            // Asignar la ruta de la foto al cliente
             nuevoCliente.RutaFoto = rutaFoto;
 
-            // Agregar el nuevo cliente a la base de datos
+            // 1. Guardar el cliente en la base de datos
             _context.Clientes.Add(nuevoCliente);
             await _context.SaveChangesAsync();
 
-            TempData["Mensaje"] = "Cliente agregado exitosamente.";
+            // 2. Registrar la venta de membresía
+            var ventaMembresia = new VentaMembresia
+            {
+                Fecha = DateTime.Now,
+                Total = TotalCalculado,
+                TipoMembresia = nuevoCliente.TipoMembresia,
+                Meses = Cliente.Meses,
+                ClienteId = nuevoCliente.Id,
+                Concepto = $"Membresía {nuevoCliente.TipoMembresia} ({Cliente.Meses} meses)"
+            };
+
+            _context.VentasMembresias.Add(ventaMembresia);
+            await _context.SaveChangesAsync();
+
+            TempData["Mensaje"] = $"Cliente agregado exitosamente. Venta registrada por ${TotalCalculado:0.00}";
             return RedirectToPage("/Clientes/GestionCliente");
         }
 
         // Modelo de entrada para el cliente
         public class ClienteInputModel
         {
-            [Required]
+            [Required(ErrorMessage = "El nombre es obligatorio")]
             public string Nombre { get; set; } = string.Empty;
 
-            [Required]
+            [Required(ErrorMessage = "El apellido es obligatorio")]
             public string Apellido { get; set; } = string.Empty;
 
-            [Required]
+            [Required(ErrorMessage = "El teléfono es obligatorio")]
+            [Phone(ErrorMessage = "Formato de teléfono inválido")]
             public string Telefono { get; set; } = string.Empty;
 
-            [Required]
+            [Required(ErrorMessage = "El tipo de membresía es obligatorio")]
             public string TipoMembresia { get; set; } = string.Empty;
 
-            [Range(1, 12, ErrorMessage = "El número de meses debe estar entre 1 y 12.")]
-            public int Meses { get; set; }  // Número de meses seleccionados por el usuario
+            [Range(1, 12, ErrorMessage = "El número de meses debe estar entre 1 y 12")]
+            public int Meses { get; set; }
 
             public IFormFile? Foto { get; set; }
         }

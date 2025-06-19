@@ -4,6 +4,9 @@ using GimManager.Data;
 using GimManager.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace GimManager.Pages.Clientes
 {
@@ -17,40 +20,81 @@ namespace GimManager.Pages.Clientes
         [BindProperty(SupportsGet = true)]
         public string MembresiaFilter { get; set; }
 
-        public List<Cliente> Clientes { get; set; } = new();
+        public List<Cliente> Clientes { get; set; } = new List<Cliente>();
 
         public GestionClienteModel(ApplicationDbContext context)
         {
             _context = context;
         }
 
-                public IActionResult OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
             try
             {
-                IQueryable<Cliente> query = _context.Clientes;
+                IQueryable<Cliente> query = _context.Clientes.AsQueryable();
 
                 if (!string.IsNullOrWhiteSpace(SearchTerm))
                 {
                     query = query.Where(c =>
                         c.Nombre.Contains(SearchTerm) ||
-                        c.Apellido.Contains(SearchTerm) ||  // Buscar por apellido
+                        c.Apellido.Contains(SearchTerm) ||
                         c.Telefono.Contains(SearchTerm));
                 }
 
                 if (!string.IsNullOrWhiteSpace(MembresiaFilter))
                 {
-                    query = query.Where(c => c.TipoMembresia == MembresiaFilter);  // Filtrar por TipoMembresia
+                    query = query.Where(c => c.TipoMembresia == MembresiaFilter);
                 }
 
-                Clientes = query.OrderBy(c => c.Apellido).ThenBy(c => c.Nombre).ToList();
+                Clientes = await query
+                    .OrderBy(c => c.Apellido)
+                    .ThenBy(c => c.Nombre)
+                    .ToListAsync();
+
                 return Page();
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                // Log the error
-                return RedirectToPage("/Error");
+                TempData["ErrorMessage"] = $"Error al cargar clientes: {ex.Message}";
+                return RedirectToPage();
             }
+        }
+
+        public async Task<IActionResult> OnPostDeleteAsync(int id)
+        {
+            try
+            {
+                // 1. Buscar el cliente
+                var cliente = await _context.Clientes.FindAsync(id);
+                
+                if (cliente == null)
+                {
+                    TempData["ErrorMessage"] = "Cliente no encontrado";
+                    return RedirectToPage();
+                }
+
+                // 2. Buscar y eliminar ventas de membresía asociadas
+                var ventasMembresias = _context.VentasMembresias
+                    .Where(v => v.ClienteId == id)
+                    .ToList();
+
+                if (ventasMembresias.Any())
+                {
+                    _context.VentasMembresias.RemoveRange(ventasMembresias);
+                }
+
+                // 3. Eliminar el cliente
+                _context.Clientes.Remove(cliente);
+                await _context.SaveChangesAsync();
+
+                TempData["SuccessMessage"] = $"Cliente {cliente.Nombre} eliminado correctamente";
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $"Error al eliminar: {ex.Message}";
+            }
+
+            return RedirectToPage();
         }
     }
 }

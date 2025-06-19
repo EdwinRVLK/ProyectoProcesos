@@ -1,59 +1,60 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
-using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using GimManager.Data;
+using GimManager.Models;
 using System.Linq;
 
-namespace GimManager.Pages.VentasYpagos
+namespace GimManager.Pages.Clientes
 {
-    public class MostrarPagosModel : PageModel
+    public class MostrarClientesModel : PageModel
     {
-        [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; } = string.Empty;
+        private readonly ApplicationDbContext _context;
 
-        public List<Pago> Pagos { get; set; } = new List<Pago>();
-
-        public void OnGet()
+        public MostrarClientesModel(ApplicationDbContext context)
         {
-            // Datos de prueba para pagos
-            var todosLosPagos = new List<Pago>
-            {
-                new Pago { Id = 1, Nombre = "Juan", ApellidoPaterno = "López", ApellidoMaterno = "Ruiz", Vencimiento = new DateTime(2026, 10, 02), PagoTotal = 1200.00M },
-                new Pago { Id = 2, Nombre = "María", ApellidoPaterno = "Hernández", ApellidoMaterno = "López", Vencimiento = new DateTime(2026, 10, 03), PagoTotal = 3000.00M },
-                new Pago { Id = 3, Nombre = "Carlos", ApellidoPaterno = "Díaz", ApellidoMaterno = "Casanova", Vencimiento = new DateTime(2026, 10, 04), PagoTotal = 400.00M },
-                new Pago { Id = 4, Nombre = "José", ApellidoPaterno = "Díaz", ApellidoMaterno = "Estrada", Vencimiento = new DateTime(2026, 10, 05), PagoTotal = 2000.00M },
-                new Pago { Id = 5, Nombre = "Fernando", ApellidoPaterno = "Sulvaran", ApellidoMaterno = "Maldonado", Vencimiento = new DateTime(2026, 10, 06), PagoTotal = 300.00M }
-            };
-
-            // Filtrar por monto si hay un filtro aplicado
-            if (!string.IsNullOrEmpty(SearchTerm))
-            {
-                decimal montoFiltro;
-                bool isMontoValido = decimal.TryParse(SearchTerm, out montoFiltro);
-
-                if (isMontoValido)
-                {
-                    Pagos = todosLosPagos.Where(p => p.PagoTotal <= montoFiltro).ToList();
-                }
-                else
-                {
-                    Pagos = todosLosPagos; // Si no es un número válido, mostrar todos los pagos
-                }
-            }
-            else
-            {
-                Pagos = todosLosPagos; // Si no hay búsqueda, mostrar todos los pagos
-            }
+            _context = context;
         }
 
-        public class Pago
+        public string SearchTerm { get; set; }
+        public string TipoMembresiaFilter { get; set; }
+        public string FechaVencimientoFilter { get; set; }
+        public IQueryable<Cliente> Clientes { get; set; }
+
+        public void OnGet(string searchTerm, string tipoMembresiaFilter, string fechaVencimientoFilter)
         {
-            public int Id { get; set; }
-            public string Nombre { get; set; }
-            public string ApellidoPaterno { get; set; }
-            public string ApellidoMaterno { get; set; }
-            public DateTime Vencimiento { get; set; }
-            public decimal PagoTotal { get; set; }
+            SearchTerm = searchTerm;
+            TipoMembresiaFilter = tipoMembresiaFilter;
+            FechaVencimientoFilter = fechaVencimientoFilter;
+
+            Clientes = _context.Clientes.AsQueryable();
+
+            if (!string.IsNullOrEmpty(SearchTerm))
+            {
+                Clientes = Clientes.Where(c => c.Nombre.Contains(SearchTerm) || c.Apellido.Contains(SearchTerm) || c.Telefono.Contains(SearchTerm));
+            }
+
+            if (!string.IsNullOrEmpty(TipoMembresiaFilter))
+            {
+                Clientes = Clientes.Where(c => c.TipoMembresia == TipoMembresiaFilter);
+            }
+
+            if (FechaVencimientoFilter == "today")
+            {
+                Clientes = Clientes.Where(c => c.FechaVencimiento.Date == DateTime.Today);
+            }
+            else if (FechaVencimientoFilter == "thisWeek")
+            {
+                var startOfWeek = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
+                Clientes = Clientes.Where(c => c.FechaVencimiento >= startOfWeek && c.FechaVencimiento < startOfWeek.AddDays(7));
+            }
+            else if (FechaVencimientoFilter == "thisMonth")
+            {
+                var startOfMonth = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+                Clientes = Clientes.Where(c => c.FechaVencimiento >= startOfMonth && c.FechaVencimiento < startOfMonth.AddMonths(1));
+            }
+
+            Clientes = Clientes.OrderBy(c => c.FechaVencimiento);
         }
     }
 }

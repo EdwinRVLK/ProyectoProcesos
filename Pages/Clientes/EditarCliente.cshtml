@@ -1,0 +1,50 @@
+<div class="header-bar">
+    <div class="logo">
+        <a href="/Lobby">
+            <img src="~/imagenes/LogoRecortado.png" alt="Logo" />
+        </a>
+    </div>
+
+    <div class="header-title">
+        <h2 id="page-title">Inicio</h2>
+    </div>
+
+    <div class="icon-buttons">
+        <a href="/Identity/lobby"><i class="fas fa-home"></i></a>
+        <i class="fas fa-user-circle"></i>
+    </div>
+</div>
+
+<div class="menu-bar">
+    <div class="menu-item">
+        <a href="/Clientes/GestionCliente" style="text-decoration: none;">
+            <button>Usuarios</button>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <a href="/Inventario/Inventario" style="text-decoration: none;">
+            <button>Inventario</button>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <a href="/Empleados/Empleados" style="text-decoration: none;">
+            <button>Empleados</button>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <button onclick="toggleDropdown(this)">Ventas y membresías</button>
+        <div class="dropdown-menu">
+            <a href="/VentasYpagos/PuntodeVenta">Punto de Venta</a>
+            <a href="/VentasYpagos/MostrarPagos">Mostrar pagos</a>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <a href="/Reportes/Reportes">
+            <button onclick="toggleDropdown(this)">Reportes</button>
+        </a>
+    </div>
+</div>
