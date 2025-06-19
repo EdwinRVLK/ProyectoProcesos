@@ -1,4 +1,4 @@
-@page
+@page "{handler?}"
 @model GimManager.Pages.Clientes.GestionClienteModel
 @{
     ViewData["Title"] = "Gestionar Clientes";
@@ -7,6 +7,39 @@
 <link rel="stylesheet" href="~/css/lobby.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+    /* Estilos adicionales */
+    .action-buttons {
+        white-space: nowrap;
+    }
+    
+    .btn-action {
+        background: none;
+        border: none;
+        padding: 0 5px;
+        cursor: pointer;
+        color: #256B45;
+        font-size: 1rem;
+        display: inline-block;
+    }
+    
+    .btn-delete {
+        color: crimson !important;
+    }
+    
+    .btn-action i {
+        transition: transform 0.2s;
+    }
+    
+    .btn-action:hover i {
+        transform: scale(1.2);
+    }
+    
+    .delete-form {
+        display: inline;
+    }
+</style>
 
 <div class="header-bar">
     <div class="logo">
@@ -78,7 +111,7 @@
     </form>
 
     <!-- Contenedor con scroll -->
-            <div class="scroll-container">
+    <div class="scroll-container">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -100,11 +133,13 @@
                         <td>@cliente.Telefono</td>
                         <td>@cliente.TipoMembresia</td>
                         <td class="action-buttons">
-                            <a href="/Clientes/EditarCliente?id=@cliente.Id"><i class="fas fa-edit" style="color: #256B45;"></i></a>
-                            <form method="post" asp-page-handler="Delete" asp-route-id="@cliente.Id" id="deleteForm-@cliente.Id" style="display: inline;">
-                                <button type="button" onclick="confirmDelete(@cliente.Id, '@cliente.Nombre')" 
-                                        style="background: none; border: none; padding: 0; cursor: pointer;">
-                                    <i class="fas fa-trash-alt" style="color: crimson;"></i>
+                            <a href="/Clientes/EditarCliente?id=@cliente.Id" class="btn-action">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@cliente.Id" class="delete-form">
+                                <button type="button" onclick="confirmarEliminacion(event, @cliente.Id, '@cliente.Nombre')" 
+                                        class="btn-action btn-delete">
+                                    <i class="fas fa-trash-alt"></i>
                                 </button>
                             </form>
                         </td>
@@ -122,5 +157,5 @@
 </div>
 
 @section Scripts {
-    <script src="~/js/AddCliente.js"></script>
+    <script></script>
 }

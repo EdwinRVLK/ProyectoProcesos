@@ -235,3 +235,24 @@ body {
 .btn-guardar:hover {
     background-color: #1d4f35;
 }
+
+.form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .btn-guardar {
+        background-color: #1d8348;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .btn-guardar:hover {
+        background-color: #155e27;
+    }

@@ -102,7 +102,11 @@
                         <td>@emp.Rol</td>
                         <td class="action-buttons">
                             <a href="/Empleados/EditarEmpleado?id=@emp.Id"><i class="fas fa-edit" style="color: #256B45;"></i></a>
-                            <a href="/Empleados/DeleteEmpleado?id=@emp.Id"><i class="fas fa-trash-alt" style="color: crimson;"></i></a>
+                            <!-- Cambia esta línea -->
+                            <a href="?handler=EliminarEmpleado&id=@emp.Id" 
+                            onclick="return confirm('¿Eliminar a @emp.Nombre @emp.ApellidoPaterno?')">
+                            <i class="fas fa-trash-alt" style="color: crimson;"></i>
+                            </a>
                         </td>
                     </tr>
                 }
@@ -118,5 +122,5 @@
 </div>
 
 @section Scripts {
-    <script src="~/js/AddCliente.js"></script>
+    <script src="~/js/Empleado.js"></script>
 }

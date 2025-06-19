@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ueDC/jsBVwY=",
+  "dgSpecHash": "hGjrXxgupDQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\edumw\\ProyectoProcesos\\GimManager.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,8 @@
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\9.0.3\\microsoft.aspnetcore.diagnostics.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.3\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.3.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.6\\microsoft.aspnetcore.identity.ui.9.0.6.nupkg.sha512",
+    "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\9.0.6\\microsoft.aspnetcore.mvc.razor.runtimecompilation.9.0.6.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.24\\microsoft.aspnetcore.razor.language.6.0.24.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.build\\17.10.4\\microsoft.build.17.10.4.nupkg.sha512",
@@ -92,7 +94,7 @@
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.6\\microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.6\\microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",
-    "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.3\\microsoft.extensions.dependencymodel.9.0.3.nupkg.sha512",
+    "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.6\\microsoft.extensions.dependencymodel.9.0.6.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.6\\microsoft.extensions.fileproviders.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\9.0.6\\microsoft.extensions.fileproviders.embedded.9.0.6.nupkg.sha512",
     "C:\\Users\\edumw\\.nuget\\packages\\microsoft.extensions.identity.core\\9.0.6\\microsoft.extensions.identity.core.9.0.6.nupkg.sha512",

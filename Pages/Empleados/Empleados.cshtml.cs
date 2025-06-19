@@ -3,6 +3,7 @@ using GimManager.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace GimManager.Pages.Empleados
 {
@@ -11,46 +12,61 @@ namespace GimManager.Pages.Empleados
         private readonly ApplicationDbContext _context;
 
         [BindProperty(SupportsGet = true)]
-        public string SearchTerm { get; set; } // Para búsqueda por nombre, apellido paterno o materno
+        public string SearchTerm { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public string SueldoFiltro { get; set; } // Para filtro de sueldo
+        public string SueldoFiltro { get; set; }
 
         public List<Empleado> Empleados { get; set; }
 
-        // Constructor para inyectar ApplicationDbContext
         public EmpleadosModel(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // Método OnGet para recuperar los empleados desde la base de datos
         public void OnGet()
+        {
+            CargarEmpleadosFiltrados();
+        }
+
+        // Método para eliminar empleado
+        public async Task<IActionResult> OnGetEliminarEmpleadoAsync(int id)
+        {
+            var empleado = await _context.Empleados.FindAsync(id);
+            
+            if (empleado != null)
+            {
+                _context.Empleados.Remove(empleado);
+                await _context.SaveChangesAsync();
+            }
+
+            CargarEmpleadosFiltrados();
+            return Page();
+        }
+
+        private void CargarEmpleadosFiltrados()
         {
             IQueryable<Empleado> query = _context.Empleados;
 
-            // Filtro de búsqueda por nombre, apellido paterno o apellido materno
+            // Aplicar filtro de búsqueda
             if (!string.IsNullOrWhiteSpace(SearchTerm))
             {
-                query = query.Where(e => e.Nombre.Contains(SearchTerm) ||
-                                         e.ApellidoPaterno.Contains(SearchTerm) ||
-                                         e.ApellidoMaterno.Contains(SearchTerm));
+                query = query.Where(e => e.Nombre.Contains(SearchTerm) || 
+                                        e.ApellidoPaterno.Contains(SearchTerm) || 
+                                        e.ApellidoMaterno.Contains(SearchTerm));
             }
 
-            // Filtro por sueldo
+            // Aplicar filtro de sueldo
             if (!string.IsNullOrWhiteSpace(SueldoFiltro))
             {
-                if (SueldoFiltro == "Menor a $2,000")
+                query = SueldoFiltro switch
                 {
-                    query = query.Where(e => e.Sueldo < 2000);
-                }
-                else if (SueldoFiltro == "Mayor a $2,000")
-                {
-                    query = query.Where(e => e.Sueldo > 2000);
-                }
+                    "Menor a $2,000" => query.Where(e => e.Sueldo < 2000),
+                    "Mayor a $2,000" => query.Where(e => e.Sueldo > 2000),
+                    _ => query
+                };
             }
 
-            // Cargar los empleados filtrados
             Empleados = query.ToList();
         }
     }

@@ -1,12 +1,12 @@
-@page
+@page 
 @model GimManager.Pages.Inventario.InventarioModel
+
 @{
     ViewData["Title"] = "Inventario";
 }
 
 <link rel="stylesheet" href="~/css/inventario.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
 
 <div class="header-bar">
     <div class="logo">
@@ -16,7 +16,7 @@
     </div>
 
     <div class="header-title">
-        <h2 id="page-title">Inventario</h2>
+        <h2 id="page-title">Inicio</h2>
     </div>
 
     <div class="icon-buttons">
@@ -27,19 +27,19 @@
 
 <div class="menu-bar">
     <div class="menu-item">
-        <a href="/Clientes/GestionCliente">
+        <a href="/Clientes/GestionCliente" style="text-decoration: none;">
             <button>Usuarios</button>
         </a>
     </div>
 
     <div class="menu-item">
-        <a href="/Inventario/Inventario">
+        <a href="/Inventario/Inventario" style="text-decoration: none;">
             <button>Inventario</button>
         </a>
     </div>
 
     <div class="menu-item">
-        <a href="/Empleados/Empleados">
+        <a href="/Empleados/Empleados" style="text-decoration: none;">
             <button>Empleados</button>
         </a>
     </div>
@@ -67,7 +67,7 @@
         </div>
 
         <select name="CategoriaFilter" class="form-control category-filter">
-            <option value="">Filtrar por Categoría</option>
+            <option value="">Todas las categorías</option>
             <option value="Accesorios" selected="@(Model.CategoriaFilter == "Accesorios")">Accesorios</option>
             <option value="Suplementos" selected="@(Model.CategoriaFilter == "Suplementos")">Suplementos</option>
             <option value="Bebidas" selected="@(Model.CategoriaFilter == "Bebidas")">Bebidas</option>
@@ -75,10 +75,10 @@
         </select>
 
         <select name="OrderBy" class="form-control order-by">
-            <option value="">Organizar por</option>
+            <option value="">Ordenar por</option>
             <option value="Nombre" selected="@(Model.OrderBy == "Nombre")">Nombre</option>
             <option value="Precio" selected="@(Model.OrderBy == "Precio")">Precio</option>
-            <option value="Fecha" selected="@(Model.OrderBy == "Fecha")">Última actualización</option>
+            <option value="Fecha" selected="@(Model.OrderBy == "Fecha")">Fecha actualización</option>
         </select>
 
         <button type="submit" class="btn-guardar search-button">Buscar</button>
@@ -89,11 +89,11 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nombre del producto</th>
+                    <th>Nombre</th>
                     <th>Categoría</th>
                     <th>Cantidad</th>
                     <th>Precio</th>
-                    <th>Última actualización</th>
+                    <th>Últ. Actualización</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -108,8 +108,14 @@
                         <td>@producto.Precio.ToString("C2")</td>
                         <td>@producto.UltimaActualizacion.ToString("dd/MM/yyyy")</td>
                         <td class="action-buttons">
-                            <a href="/Inventario/EditarProducto?id=@producto.Id"><i class="fas fa-edit edit-icon"></i></a>
-                            <a href="/Inventario/EliminarProducto?id=@producto.Id"><i class="fas fa-trash-alt delete-icon"></i></a>
+                             <a href="/Inventario/EditarProducto?id=@producto.Id" class="btn-action">
+                            <i class="fas fa-edit" style="color: rgb(5, 74, 5);"></i>
+                            </a>
+                            <a href="?handler=Eliminar&id=@producto.Id" 
+                               class="btn-action"
+                               onclick="return confirm('¿Eliminar @producto.NombreProducto?')">
+                                <i class="fas fa-trash-alt" style="color: red;"></i>
+                            </a>
                         </td>
                     </tr>
                 }
@@ -118,12 +124,12 @@
     </div>
 
     <div class="add-product-container">
-        <a href="/Inventario/AgregarProducto" class="btn-guardar add-product-button">
-            <i class="fas fa-plus-circle"></i> Agregar producto
+        <a asp-page="./AgregarProducto" class="btn-guardar">
+            <i class="fas fa-plus-circle"></i> Nuevo Producto
         </a>
     </div>
 </div>
 
 @section Scripts {
-    <script src="~/js/AddCliente.js"></script>
+    <script src="~/js/inventario.js"></script>
 }

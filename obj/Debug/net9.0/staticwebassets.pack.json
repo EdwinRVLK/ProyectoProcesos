@@ -61,8 +61,16 @@
       "PackagePath": "staticwebassets\\js\\AddCliente.js"
     },
     {
+      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\Inventario.js",
+      "PackagePath": "staticwebassets\\js\\Inventario.js"
+    },
+    {
       "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\PuntodeVenta.js",
       "PackagePath": "staticwebassets\\js\\PuntodeVenta.js"
+    },
+    {
+      "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\editarcliente.js",
+      "PackagePath": "staticwebassets\\js\\editarcliente.js"
     },
     {
       "Id": "C:\\Users\\edumw\\ProyectoProcesos\\wwwroot\\js\\lobby.js",

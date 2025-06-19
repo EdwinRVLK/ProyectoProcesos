@@ -2,15 +2,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using GimManager.Data;
 using GimManager.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace GimManager.Pages.Inventario
 {
     public class InventarioModel : PageModel
     {
         private readonly ApplicationDbContext _context;
+
+        public InventarioModel(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         [BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
@@ -21,50 +25,49 @@ namespace GimManager.Pages.Inventario
         [BindProperty(SupportsGet = true)]
         public string OrderBy { get; set; }
 
-        public List<Producto> Productos { get; set; } = new();
+        public List<Producto> Productos { get; set; } = new List<Producto>();
 
-        public InventarioModel(ApplicationDbContext context)
+        public void OnGet()
         {
-            _context = context;
+            IQueryable<Producto> query = _context.Productos.AsQueryable();
+
+            // Aplicar filtro de búsqueda
+            if (!string.IsNullOrEmpty(SearchTerm))
+            {
+                query = query.Where(p => 
+                    p.NombreProducto.Contains(SearchTerm) ||
+                    p.Categoria.Contains(SearchTerm) ||
+                    p.Codigo.Contains(SearchTerm));
+            }
+
+            // Aplicar filtro por categoría
+            if (!string.IsNullOrEmpty(CategoriaFilter))
+            {
+                query = query.Where(p => p.Categoria == CategoriaFilter);
+            }
+
+            // Aplicar ordenamiento
+            query = OrderBy switch
+            {
+                "Precio" => query.OrderBy(p => p.Precio),
+                "Fecha" => query.OrderByDescending(p => p.UltimaActualizacion),
+                _ => query.OrderBy(p => p.NombreProducto) // Orden por defecto
+            };
+
+            Productos = query.ToList();
         }
 
-        public IActionResult OnGet()
+        public IActionResult OnGetEliminar(int id)
         {
-            try
+            var producto = _context.Productos.FirstOrDefault(p => p.Id == id);
+            
+            if (producto != null)
             {
-                IQueryable<Producto> query = _context.Productos;
-
-                // Filtrar por búsqueda
-                if (!string.IsNullOrWhiteSpace(SearchTerm))
-                {
-                    query = query.Where(p =>
-                        p.NombreProducto.Contains(SearchTerm) ||
-                        p.Categoria.Contains(SearchTerm) ||
-                        p.Codigo.Contains(SearchTerm));
-                }
-
-                // Filtrar por categoría
-                if (!string.IsNullOrWhiteSpace(CategoriaFilter))
-                {
-                    query = query.Where(p => p.Categoria == CategoriaFilter);
-                }
-
-                // Ordenar productos
-                query = OrderBy switch
-                {
-                    "Precio" => query.OrderBy(p => p.Precio),
-                    "Fecha" => query.OrderByDescending(p => p.UltimaActualizacion),
-                    _ => query.OrderBy(p => p.NombreProducto)
-                };
-
-                Productos = query.ToList();
-                return Page();
+                _context.Productos.Remove(producto);
+                _context.SaveChanges();
             }
-            catch (Exception ex)
-            {
-                // Log error (consider using ILogger)
-                return RedirectToPage("/Error");
-            }
+
+            return RedirectToPage();
         }
     }
 }
